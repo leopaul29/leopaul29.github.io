@@ -14,7 +14,12 @@ const ExperiencesPage = () => {
             company
             order
             title
+            startdate
+            place
+            enddate
+            contract
           }
+          html
         }
       }
     }
@@ -28,11 +33,13 @@ const ExperiencesPage = () => {
                     data.allMarkdownRemark.nodes.map(experience => {
                         return (
                             <div key={experience.id}>
-                                <h4>
+                                <h1 align="center">
                                     {experience.frontmatter.title} - {' '}
                                     {experience.frontmatter.company}
-                                </h4>
-                                <p>{experience.excerpt}</p>
+                                </h1>
+                                <h2>📆 {experience.frontmatter.startdate} - {experience.frontmatter.enddate}</h2>
+                                <h3>🌍 {experience.frontmatter.place}</h3>
+                                <p dangerouslySetInnerHTML={{__html: experience.html}} />
                             </div>
                         )
                     })
