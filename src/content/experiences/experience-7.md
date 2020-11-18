@@ -1,15 +1,15 @@
 ---
-title: "Junior Software Developer"
+title: " Intermediate Software Developer"
 contract: "Permanent"
 company: "Sopra Steria"
 place: "Nice Sophia-Antipolis"
 startdate: "10/2020"
 enddate: "now"
-order: 6
+order: 7
 ---
-<p>Design and develop a new solution for Air France on the ICare application. The application is based on Pega Customer Service 7.2 and manages AFKLM customer claims.
+<p>Working on the migration of Cnam Sophia application (Caisse nationale de l’Assurance Maladie). The application is based on Pega Customer Service 7.2 and manages the health insurance support service for chronically ill patients. It is offered throughout France to people with diabetes treated in the context of a long-term illness and since 2018 to people with asthma.</p>
 
-Migration of Cnam application and IHM development (Caisse nationale de l’Assurance Maladie)</p>
+<i>E-learning Pega Customer Services Developer 8.3</i>
 
 <h4>Key activities</h4>
 <ul>

@@ -1,5 +1,5 @@
 ---
-title: "Junior Software Developer"
+title: " Intermediate Software Developer"
 contract: "Permanent"
 company: "Sopra Steria"
 place: "Nice Sophia-Antipolis"
