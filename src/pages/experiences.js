@@ -6,7 +6,9 @@ import SEO from "../components/seo"
 const ExperiencesPage = () => {
   const data = useStaticQuery(graphql`
     {
-      allMarkdownRemark {
+      allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/(experiences)/" } }
+      ) {        
         nodes {
           id
           excerpt
