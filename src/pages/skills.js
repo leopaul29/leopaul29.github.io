@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -11,6 +11,7 @@ const ExperiencesPage = () => {
       ) {        
         nodes {
           id
+          excerpt
           frontmatter {
             title
             level
@@ -25,18 +26,26 @@ const ExperiencesPage = () => {
     <Layout>
       <SEO title="Skills" />
       <div>
-        <h1>My skills</h1>
-        <ol>
-          {
-            data.allMarkdownRemark.nodes.map(skill => {
-              return (
-                  <li key={skill.id}>
-                    {skill.frontmatter.title} - {skill.frontmatter.level}
-                  </li>
-              )
-            })
-          }
-        </ol>
+        <h1 class="title is-1">My skills</h1>
+        <div class="content">
+          <ol>
+            {
+              data.allMarkdownRemark.nodes.map(skill => {
+                return (
+                    <div key={skill.id}>
+                      <h4 class="title is-4">
+                      {skill.frontmatter.title} - {skill.frontmatter.level}
+                      </h4>
+                      <p>
+                      {skill.frontmatter.excerpt}
+                      </p>
+                      <p dangerouslySetInnerHTML={{__html: skill.html}} />
+                    </div>
+                )
+              })
+            }
+          </ol>
+        </div>
       </div>
     </Layout>
   )
