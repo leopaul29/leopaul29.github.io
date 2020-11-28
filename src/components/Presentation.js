@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import downloadCVFile from '../../src/content/CV_leopaulMARTIN_en.pdf'
 
 export const Presentation = ({ heading, htmlDescription }) => (
   <div className="container">
@@ -21,7 +22,13 @@ export const Presentation = ({ heading, htmlDescription }) => (
                 className="subtitle"
                 dangerouslySetInnerHTML={{ __html: htmlDescription }}
               />
-              <a className="button is-danger">Télécharger mon CV</a>
+              <a
+                className="button is-danger"
+                href={downloadCVFile}
+                download={true}
+              >
+                Télécharger mon CV
+              </a>
             </div>
           </div>
         </div>
