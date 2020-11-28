@@ -1,8 +1,9 @@
 import React from "react"
 import PropTypes from "prop-types"
 import downloadCVFile from '../../src/content/CV_leopaulMARTIN_en.pdf'
+import Img from 'gatsby-image'
 
-export const Presentation = ({ heading, htmlDescription }) => (
+export const Presentation = ({ heading, htmlDescription, fixed }) => (
   <div className="container">
     <section class="hero">
       <div class="hero-body">
@@ -12,7 +13,7 @@ export const Presentation = ({ heading, htmlDescription }) => (
               <figure className="image is-128x128">
                 <img
                   className="is-rounded"
-                  src="https://bulma.io/images/placeholders/128x128.png"
+                  src={fixed.src}
                 />
               </figure>
             </div>

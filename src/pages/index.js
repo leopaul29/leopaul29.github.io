@@ -17,8 +17,8 @@ const IndexPage = () => {
           heading
           picture {
             childImageSharp {
-              fixed(width: 150) {
-                src
+              fixed(width: 500) {
+                ...GatsbyImageSharpFixed
               }
             }
           }
@@ -29,11 +29,16 @@ const IndexPage = () => {
 
   const { frontmatter, html, excerpt } = data.markdownRemark
   const { heading, picture } = frontmatter
+  const { fixed } = picture.childImageSharp
 
   return (
     <Layout>
       <SEO title="Home" />
-      <Presentation heading={frontmatter.heading} htmlDescription={excerpt} />
+      <Presentation
+        heading={frontmatter.heading}
+        htmlDescription={excerpt}
+        fixed={fixed}
+      />
       <Link to="/page-2/">Go to page 2</Link> <br />
       <Link to="/experiences/">Go to experiences page</Link> <br />
       <Link to="/skills/">Go to skills page</Link> <br />
