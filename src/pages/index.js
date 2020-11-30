@@ -39,10 +39,6 @@ const IndexPage = () => {
         htmlDescription={excerpt}
         fixed={fixed}
       />
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/experiences/">Go to experiences page</Link> <br />
-      <Link to="/skills/">Go to skills page</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
     </Layout>
   )
 }
