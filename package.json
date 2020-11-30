@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "leopaul29.github.io",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A simple portfolio to get up and developing quickly with Gatsby",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "leopaul29",
   "dependencies": {
     "bulma": "^0.9.1",
     "gatsby": "^2.24.91",
@@ -42,9 +42,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/leopaul29/leopaul29.github.io"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/leopaul29/leopaul29.github.io/issues"
   }
 }
