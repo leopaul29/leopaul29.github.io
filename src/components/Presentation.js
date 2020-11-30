@@ -1,9 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
-import downloadCVFile from '../../src/content/CV_leopaulMARTIN_en.pdf'
-import Img from 'gatsby-image'
 
-export const Presentation = ({ heading, htmlDescription, fixed }) => (
+export const Presentation = ({ heading, htmlDescription, profileImageSource,downloadCVFile }) => (
   <div className="container">
     <section class="hero">
       <div class="hero-body">
@@ -11,10 +9,7 @@ export const Presentation = ({ heading, htmlDescription, fixed }) => (
           <div className="columns">
             <div className="column is-2 is-offset-1">
               <figure className="image is-128x128">
-                <img
-                  className="is-rounded"
-                  src={fixed.src}
-                />
+                <img className="is-rounded" src={profileImageSource} alt="profile_image" />
               </figure>
             </div>
             <div className="column">
