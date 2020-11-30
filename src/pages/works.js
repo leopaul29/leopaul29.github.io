@@ -3,7 +3,7 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const ExperiencesPage = () => {
+const WorksPage = () => {
   const data = useStaticQuery(graphql`
     {
       allMarkdownRemark(
@@ -30,9 +30,9 @@ const ExperiencesPage = () => {
 
   return (
     <Layout>
-      <SEO title="Experiences" />
+      <SEO title="Works" />
       <div>
-        <h1>My experiences</h1>
+        <h1>My Works</h1>
         <ol>
           {data.allMarkdownRemark.nodes.map(experience => {
             return (
@@ -77,4 +77,4 @@ const ExperiencesPage = () => {
   )
 }
 
-export default ExperiencesPage
+export default WorksPage

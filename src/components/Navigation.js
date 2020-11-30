@@ -14,7 +14,7 @@ export default function Navigation() {
 
             <div id="navbarBasicExample" class="navbar-menu">
                 <div class="navbar-end">
-                    <Link class="navbar-item">Works</Link>
+                    <Link class="navbar-item" to="/works/">Works</Link>
                     <Link class="navbar-item">Blog</Link>
                     <Link class="navbar-item">Contact</Link>
                 </div>
