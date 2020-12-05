@@ -36,4 +36,6 @@ export const Presentation = ({ heading, htmlDescription, profileImageSource,down
 Presentation.propTypes = {
   headging: PropTypes.string.isRequired,
   htmlDescription: PropTypes.string.isRequired,
+  profileImageSource: PropTypes.string.isRequired,
+  downloadCVFile: PropTypes.any,
 }
