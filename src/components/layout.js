@@ -11,12 +11,19 @@ import PropTypes from "prop-types"
 import Navigation from "./Navigation"
 
 const Layout = ({ children }) => {
-  
   return (
-    <div className="container">
-      <Navigation/>
-      <main>{children}</main>
-    </div>
+    <>
+      <head>
+        <script
+          src="https://kit.fontawesome.com/fabad74e7d.js"
+          crossorigin="anonymous"
+        ></script>
+      </head>
+      <div className="container">
+        <Navigation />
+        <main>{children}</main>
+      </div>
+    </>
   )
 }
 
