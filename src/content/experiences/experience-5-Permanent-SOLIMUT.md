@@ -7,6 +7,7 @@ startdate: "06/2018"
 enddate: "11/2018"
 order: 5
 ---
+
 <p>Design and develop a new solution for Groupe Solimut Mutuelles de France, to manage the relationship driven customer service.</p>
 
 <i>Certified Pega Senior System Architect 7.4

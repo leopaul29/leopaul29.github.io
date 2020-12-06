@@ -1,5 +1,5 @@
 ---
-title: " Intermediate Software Developer"
+title: "Intermediate Software Developer"
 contract: "Permanent"
 company: "Sopra Steria"
 place: "Nice Sophia-Antipolis"
@@ -7,6 +7,7 @@ startdate: "11/2018"
 enddate: "09/2019"
 order: 6
 ---
+
 <p>Design and develop a new solution for Air France on the ICare application. The application is based on Pega Customer Service 7.2 and manages AFKLM customer claims.</p>
 
 <h4>Key activities</h4>
