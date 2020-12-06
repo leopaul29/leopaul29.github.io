@@ -6,6 +6,8 @@ place: "Nice Sophia-Antipolis"
 startdate: "05/2015"
 enddate: "08/2015"
 order: 2
+visibleWork: true
+timelineclass: "is-warning"
 ---
 
 <p>Design and development of a Web application for testing purpose based on an already existing solution. Users can create new tests such as ping, SQL request, web services call. The application will perform with recurrence the tests and notify stakeholders by message using OpenFire server, mail or phone call.</p>

@@ -6,6 +6,8 @@ place: "Nice Sophia-Antipolis"
 startdate: "09/2017"
 enddate: "06/2018"
 order: 4
+visibleWork: true
+timelineclass: "is-primary"
 ---
 
 <p>Design and develop a new solution for Orange Business Services, to manage the service activation from customer order until on-site installation around the world.</p>

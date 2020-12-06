@@ -6,6 +6,8 @@ place: "Nice Sophia-Antipolis"
 startdate: "10/2020"
 enddate: "now"
 order: 8
+visibleWork: true
+timelineclass: "is-primary"
 ---
 
 <p>Working on the migration of Cnam Sophia application (Caisse nationale de l’Assurance Maladie). The application is based on Pega Customer Service 8.3 and manages the health insurance support service for chronically ill patients. It is offered throughout France to people with diabetes treated in the context of a long-term illness and since 2018 to people with asthma.</p>
