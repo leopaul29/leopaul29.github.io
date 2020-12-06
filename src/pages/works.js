@@ -8,8 +8,11 @@ const WorksPage = () => {
   const data = useStaticQuery(graphql`
     {
       allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/(experiences)/" } }
-        sort: { fields: frontmatter___order }
+        filter: {
+          fileAbsolutePath: { regex: "/(experiences)/" }
+          frontmatter: { visibleWork: { eq: true } }
+        }
+        sort: { fields: frontmatter___order, order: DESC }
       ) {
         nodes {
           id
@@ -40,7 +43,7 @@ const WorksPage = () => {
               {data.allMarkdownRemark.nodes.map((experience, index) => {
                 return (
                   <li key={experience.id}>
-                    <Link to={`#${index}`}>
+                    <Link to={`#work${index}`}>
                       {experience.frontmatter.contract}{" "}
                       {experience.frontmatter.title} at{" "}
                       {experience.frontmatter.company}
@@ -55,7 +58,7 @@ const WorksPage = () => {
           {data.allMarkdownRemark.nodes.map((experience, index) => {
             return (
               <section class="section" key={experience.id}>
-                <h1 align="center" id={index}>
+                <h1 align="center" id={`work${index}`}>
                   {experience.frontmatter.title} -{" "}
                   {experience.frontmatter.company}
                 </h1>
