@@ -8,7 +8,10 @@ const WorksPage = () => {
   const data = useStaticQuery(graphql`
     {
       allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/(experiences)/" } }
+        filter: {
+          fileAbsolutePath: { regex: "/(experiences)/" }
+          frontmatter: { visibleWork: { eq: true } }
+        }
         sort: { fields: frontmatter___order, order: DESC }
       ) {
         nodes {
