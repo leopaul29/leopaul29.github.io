@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-export const WorksTimeLine = ({ startdate, title, timelineclass, excerpt }) => (
+export const WorksTimeLine = ({ startdate, title, timelineclass }) => (
   <div className={`timeline-item ${timelineclass}`}>
     <div className={`timeline-marker ${timelineclass}`}></div>
     <div className={`timeline-marker ${timelineclass} is-image is-32x32`}>
@@ -13,7 +13,6 @@ export const WorksTimeLine = ({ startdate, title, timelineclass, excerpt }) => (
     <div className="timeline-content">
       <p className="heading">{startdate}</p>
       <p>{title}</p>
-      <p>{excerpt}</p>
     </div>
   </div>
 )

@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import { WorksTimeLine } from "../components/WorksTimeLine"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -36,18 +36,15 @@ const WorksTimeLineContainer = () => {
     {
       allMarkdownRemark(
         filter: { fileAbsolutePath: { regex: "/(experiences)/" } }
-        sort: { fields: frontmatter___order, order: ASC }
+        sort: { fields: frontmatter___order, order: DESC }
       ) {
         nodes {
           id
-          excerpt
           frontmatter {
             company
             order
             title
             startdate
-            place
-            enddate
             contract
             timelineclass
           }
@@ -56,7 +53,8 @@ const WorksTimeLineContainer = () => {
     }
   `)
 
-  function printWorksTimeLine(experience) {
+  function printWorksTimeLine(index) {
+    const experience = data.allMarkdownRemark.nodes[index]
     const {
       startdate,
       contract,
@@ -70,11 +68,13 @@ const WorksTimeLineContainer = () => {
     }
 
     return (
-      <WorksTimeLine
-        startdate={startdate}
-        title={titleConcat}
-        timelineclass={timelineclass}
-      />
+      <Link to={`#work${index}`}>
+        <WorksTimeLine
+          startdate={startdate}
+          title={titleConcat}
+          timelineclass={timelineclass}
+        />
+      </Link>
     )
   }
 
@@ -89,22 +89,22 @@ const WorksTimeLineContainer = () => {
   }
 
   return (
-    <div className="timeline is-centered p-5">
+    <div className="timeline">
       {printTimeLineHeader("Today", "is-primary")}
-      {printWorksTimeLine(data.allMarkdownRemark.nodes[7])}
+      {printWorksTimeLine(0)}
       {printTimeLineHeader("2020", "is-primary", planeArrivalIcon)}
-      {printWorksTimeLine(data.allMarkdownRemark.nodes[6])}
+      {printWorksTimeLine(1)}
       {printTimeLineHeader("2019", "is-primary", planeDepartureIcon)}
-      {printWorksTimeLine(data.allMarkdownRemark.nodes[5])}
-      {printWorksTimeLine(data.allMarkdownRemark.nodes[4])}
+      {printWorksTimeLine(2)}
+      {printWorksTimeLine(3)}
       {printTimeLineHeader("2018", "is-primary")}
-      {printWorksTimeLine(data.allMarkdownRemark.nodes[3])}
+      {printWorksTimeLine(4)}
       {printTimeLineHeader("2017", "is-primary", graduateIcon)}
-      {printWorksTimeLine(data.allMarkdownRemark.nodes[2])}
+      {printWorksTimeLine(5)}
       {printTimeLineHeader("2016", "is-warning")}
-      {printWorksTimeLine(data.allMarkdownRemark.nodes[1])}
+      {printWorksTimeLine(6)}
       {printTimeLineHeader("2015", "is-warning")}
-      {printWorksTimeLine(data.allMarkdownRemark.nodes[0])}
+      {printWorksTimeLine(7)}
       {printTimeLineHeader("University", "is-warning", universityIcon)}
     </div>
   )

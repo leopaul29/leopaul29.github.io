@@ -4,7 +4,7 @@ contract: "Permanent"
 company: "Sopra Steria"
 place: "Nice Sophia-Antipolis"
 startdate: "10/2020"
-enddate: "now"
+enddate: "Today"
 order: 8
 visibleWork: true
 timelineclass: "is-primary"
