@@ -13,12 +13,6 @@ import Navigation from "./Navigation"
 const Layout = ({ children }) => {
   return (
     <>
-      <head>
-        <script
-          src="https://kit.fontawesome.com/fabad74e7d.js"
-          crossorigin="anonymous"
-        ></script>
-      </head>
       <div className="container">
         <Navigation />
         <main>{children}</main>
