@@ -1,6 +1,27 @@
 .sidebar {
   position: sticky;
   position: -webkit-sticky;
+  display: inline-block;
   max-height: 100vh;
+  overflow-y: auto;
   top: 0px;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.sidebar::-webkit-scrollbar-thumb {
+  background: #969696;
+  border-radius: 0px;
+  box-shadow: none;
+}
+.sidebar::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 0px;
+  box-shadow: none;
+}
+
+a {
+  color: #4a4a4a;
 }
