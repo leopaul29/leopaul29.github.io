@@ -36,7 +36,7 @@ const WorksPage = () => {
     <Layout>
       <SEO title="Works" />
       <div className="columns">
-        <aside class="menu">
+        <aside class="column is-4 is-narrow-mobile is-fullheight section is-hidden-mobile sidebar">
           <p class="menu-label">Works</p>
           <nav id="work-list">
             <ul class="menu-list">
@@ -79,6 +79,7 @@ const WorksPage = () => {
               </section>
             )
           })}
+          <Link to="/">Go back to the homepage</Link>
         </div>
       </div>
     </Layout>

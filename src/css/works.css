@@ -1,15 +1,6 @@
-.menu {
+.sidebar {
   position: sticky;
-  display: inline-block;
-  vertical-align: top;
+  position: -webkit-sticky;
   max-height: 100vh;
-  overflow-y: auto;
-  width: 300px;
-  top: 0;
-  bottom: 0;
-  padding: 30px;
-}
-
-.content {
-  display: inline-block;
+  top: 0px;
 }
