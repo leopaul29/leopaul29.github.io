@@ -1,15 +1,27 @@
 import React from "react"
+import { Link } from "gatsby"
 import PropTypes from "prop-types"
 
-export const Presentation = ({ heading, htmlDescription, profileImageSource,downloadCVFile }) => (
+export const Presentation = ({
+  heading,
+  htmlDescription,
+  profileImageSource,
+  downloadCVFile,
+}) => (
   <div className="container">
-    <section class="hero">
-      <div class="hero-body">
-        <div class="container">
+    <section className="hero">
+      <div className="hero-body">
+        <div className="container">
           <div className="columns">
             <div className="column is-2 is-offset-1">
               <figure className="image is-128x128">
-                <img className="is-rounded" src={profileImageSource} alt="profile_image" />
+                <Link to="https://myoctocat.com/" target="_blank">
+                  <img
+                    className="is-rounded"
+                    src={profileImageSource}
+                    alt="profile_image"
+                  />
+                </Link>
               </figure>
             </div>
             <div className="column">
@@ -34,7 +46,7 @@ export const Presentation = ({ heading, htmlDescription, profileImageSource,down
 )
 
 Presentation.propTypes = {
-  headging: PropTypes.string.isRequired,
+  heading: PropTypes.string.isRequired,
   htmlDescription: PropTypes.string.isRequired,
   profileImageSource: PropTypes.string.isRequired,
   downloadCVFile: PropTypes.any,

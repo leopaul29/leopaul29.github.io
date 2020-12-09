@@ -3,13 +3,14 @@ import React from "react"
 
 export default function Navigation() {
   return (
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
+    <nav className="navbar" role="navigation" aria-label="main navigation">
+      <div className="navbar-brand">
         <Link
           role="button"
-          class="navbar-burger"
+          className="navbar-burger"
           aria-label="menu"
           aria-expanded="false"
+          to="/"
         >
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
@@ -17,15 +18,15 @@ export default function Navigation() {
         </Link>
       </div>
 
-      <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-end">
-          <Link class="navbar-item" to="/works">
+      <div id="navbarBasicExample" className="navbar-menu">
+        <div className="navbar-end">
+          <Link className="navbar-item" to="/works">
             Works
           </Link>
-          <Link class="navbar-item" to="#">
+          <Link className="navbar-item" to="#">
             Blog
           </Link>
-          <Link class="navbar-item" to="#">
+          <Link className="navbar-item" to="#">
             Contact
           </Link>
         </div>

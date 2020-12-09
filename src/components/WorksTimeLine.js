@@ -1,15 +1,19 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-export const WorksTimeLine = ({ startdate, title, timelineclass }) => (
-  <div class={`timeline-item ${timelineclass}`}>
-    <div class={`timeline-marker ${timelineclass}`}></div>
-    <div class={`timeline-marker ${timelineclass} is-image is-32x32`}>
-      <img src="https://bulma.io/images/placeholders/32x32.png" alt="placeholders"/>
+export const WorksTimeLine = ({ startdate, title, timelineclass, excerpt }) => (
+  <div className={`timeline-item ${timelineclass}`}>
+    <div className={`timeline-marker ${timelineclass}`}></div>
+    <div className={`timeline-marker ${timelineclass} is-image is-32x32`}>
+      <img
+        src="https://bulma.io/images/placeholders/32x32.png"
+        alt="placeholders"
+      />
     </div>
-    <div class="timeline-content">
-      <p class="heading">{startdate}</p>
+    <div className="timeline-content">
+      <p className="heading">{startdate}</p>
       <p>{title}</p>
+      <p>{excerpt}</p>
     </div>
   </div>
 )

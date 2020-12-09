@@ -28,14 +28,12 @@ const PresentationContainer = () => {
   const { fixed } = picture.childImageSharp
 
   return (
-    <div>
-      <Presentation
-        heading={heading}
-        htmlDescription={excerpt}
-        profileImageSource={fixed.src}
-        downloadCVFile={downloadCVFile}
-      />
-    </div>
+    <Presentation
+      heading={heading}
+      htmlDescription={excerpt}
+      profileImageSource={fixed.src}
+      downloadCVFile={downloadCVFile}
+    />
   )
 }
 
