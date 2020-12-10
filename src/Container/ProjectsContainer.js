@@ -29,7 +29,7 @@ const ProjectsContainer = () => {
         const { html } = project
 
         return (
-          <div className="column is-one-third">
+          <div key={project.id} className="column is-one-third">
             <Project
               title={title}
               techno={techno}

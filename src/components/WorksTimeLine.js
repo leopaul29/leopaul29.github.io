@@ -17,7 +17,7 @@ export const WorksTimeLine = ({ startdate, title, timelineclass }) => (
   </div>
 )
 
-Presentation.propTypes = {
+WorksTimeLine.propTypes = {
   startdate: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   timelineclass: PropTypes.string.isRequired,

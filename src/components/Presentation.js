@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 
 export const Presentation = ({
@@ -15,13 +14,17 @@ export const Presentation = ({
           <div className="columns">
             <div className="column is-2 is-offset-1">
               <figure className="image is-128x128">
-                <Link to="https://myoctocat.com/" target="_blank">
+                <a
+                  href="https://myoctocat.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img
                     className="is-rounded"
                     src={profileImageSource}
                     alt="profile_image"
                   />
-                </Link>
+                </a>
               </figure>
             </div>
             <div className="column">
