@@ -1,4 +1,3 @@
-import { Link } from "gatsby"
 import React from "react"
 
 const Project = ({ title, techno, htmlDescription, github, live }) => {
@@ -6,9 +5,9 @@ const Project = ({ title, techno, htmlDescription, github, live }) => {
     <p className="card-footer-item">
       <span>
         Live{" "}
-        <Link to={live} target="_blank">
+        <a href={live} target="_blank" rel="noreferrer">
           here
-        </Link>
+        </a>
       </span>
     </p>
   )
@@ -26,9 +25,9 @@ const Project = ({ title, techno, htmlDescription, github, live }) => {
         <p className="card-footer-item">
           <span>
             View on{" "}
-            <Link to={github} target="_blank">
+            <a href={github} target="_blank" rel="noreferrer">
               Github
-            </Link>
+            </a>
           </span>
         </p>
         {htmlLive}
