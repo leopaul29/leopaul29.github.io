@@ -1,6 +1,6 @@
 ---
 title: "Github Portfolio"
-techno: "reactJs and Gatsby"
+techno: "Gatsby, ReactJs and Bulma css"
 github: "https://github.com/leopaul29/leopaul29.github.io"
 live: "https://leopaul29.github.io/"
 ---
