@@ -24,11 +24,12 @@ const ProjectsContainer = () => {
 
   return (
     <div className="columns">
-      <div className="column is-4">
-        {data.allMarkdownRemark.nodes.map(project => {
-          const { title, techno, github, live } = project.frontmatter
-          const { html } = project
-          return (
+      {data.allMarkdownRemark.nodes.map(project => {
+        const { title, techno, github, live } = project.frontmatter
+        const { html } = project
+
+        return (
+          <div className="column is-one-third">
             <Project
               title={title}
               techno={techno}
@@ -36,9 +37,9 @@ const ProjectsContainer = () => {
               github={github}
               live={live}
             />
-          )
-        })}
-      </div>
+          </div>
+        )
+      })}
     </div>
   )
 }

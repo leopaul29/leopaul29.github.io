@@ -2,15 +2,28 @@ import { Link } from "gatsby"
 import React from "react"
 
 const Project = ({ title, techno, htmlDescription, github, live }) => {
+  var htmlLive = (
+    <p className="card-footer-item">
+      <span>
+        Live{" "}
+        <Link to={live} target="_blank">
+          here
+        </Link>
+      </span>
+    </p>
+  )
+
+  if (live === "") htmlLive = ""
+
   return (
-    <div class="card">
-      <div class="card-content">
-        <p class="title">{title}</p>
-        <p class="subtitle">{techno}</p>
+    <div className="card">
+      <div className="card-content">
+        <p className="title">{title}</p>
+        <p className="subtitle">{techno}</p>
         <p dangerouslySetInnerHTML={{ __html: htmlDescription }} />
       </div>
-      <footer class="card-footer">
-        <p class="card-footer-item">
+      <footer className="card-footer">
+        <p className="card-footer-item">
           <span>
             View on{" "}
             <Link to={github} target="_blank">
@@ -18,14 +31,7 @@ const Project = ({ title, techno, htmlDescription, github, live }) => {
             </Link>
           </span>
         </p>
-        <p class="card-footer-item">
-          <span>
-            Live{" "}
-            <Link to={live} target="_blank">
-              here
-            </Link>
-          </span>
-        </p>
+        {htmlLive}
       </footer>
     </div>
   )
