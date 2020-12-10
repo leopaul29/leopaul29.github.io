@@ -6,7 +6,6 @@ place: "La Gaude, France"
 startdate: "04/2014"
 enddate: "06/2014"
 order: 1
-visibleWork: true
 timelineclass: "is-warning"
 ---
 

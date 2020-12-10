@@ -10,28 +10,28 @@ import {
   faPlaneArrival,
 } from "@fortawesome/free-solid-svg-icons"
 
-const WorksTimeLineContainer = () => {
-  const graduateIcon = (
-    <span class="icon pr-2 is-large">
-      <FontAwesomeIcon icon={faUserGraduate} size="lg" />
-    </span>
-  )
-  const universityIcon = (
-    <span class="icon pr-2 is-large">
-      <FontAwesomeIcon icon={faUniversity} size="lg" />
-    </span>
-  )
-  const planeDepartureIcon = (
-    <span class="icon pr-2 is-large">
-      <FontAwesomeIcon icon={faPlaneDeparture} size="lg" />
-    </span>
-  )
-  const planeArrivalIcon = (
-    <span class="icon pr-2 is-large ">
-      <FontAwesomeIcon icon={faPlaneArrival} size="lg" />
-    </span>
-  )
+const graduateIcon = (
+  <span class="icon pr-2 is-large">
+    <FontAwesomeIcon icon={faUserGraduate} size="lg" />
+  </span>
+)
+const universityIcon = (
+  <span class="icon pr-2 is-large">
+    <FontAwesomeIcon icon={faUniversity} size="lg" />
+  </span>
+)
+const planeDepartureIcon = (
+  <span class="icon pr-2 is-large">
+    <FontAwesomeIcon icon={faPlaneDeparture} size="lg" />
+  </span>
+)
+const planeArrivalIcon = (
+  <span class="icon pr-2 is-large ">
+    <FontAwesomeIcon icon={faPlaneArrival} size="lg" />
+  </span>
+)
 
+const WorksTimeLineContainer = () => {
   const data = useStaticQuery(graphql`
     {
       allMarkdownRemark(

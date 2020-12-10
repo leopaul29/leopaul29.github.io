@@ -11,7 +11,6 @@ const WorksPage = () => {
       allMarkdownRemark(
         filter: {
           fileAbsolutePath: { regex: "/(experiences)/" }
-          frontmatter: { visibleWork: { eq: true } }
         }
         sort: { fields: frontmatter___order, order: DESC }
       ) {

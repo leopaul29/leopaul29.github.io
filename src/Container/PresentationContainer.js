@@ -8,7 +8,6 @@ const PresentationContainer = () => {
     {
       markdownRemark(fileAbsolutePath: { regex: "/(profile)/" }) {
         id
-        excerpt
         frontmatter {
           heading
           picture {
@@ -19,18 +18,19 @@ const PresentationContainer = () => {
             }
           }
         }
+        html
       }
     }
   `)
 
-  const { frontmatter, excerpt } = data.markdownRemark
+  const { frontmatter, html } = data.markdownRemark
   const { heading, picture } = frontmatter
   const { fixed } = picture.childImageSharp
 
   return (
     <Presentation
       heading={heading}
-      htmlDescription={excerpt}
+      htmlDescription={html}
       profileImageSource={fixed.src}
       downloadCVFile={downloadCVFile}
     />
