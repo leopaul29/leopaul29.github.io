@@ -6,7 +6,6 @@ place: "Nice Sophia-Antipolis"
 startdate: "09/2017"
 enddate: "06/2018"
 order: 4
-visibleWork: true
 timelineclass: "is-primary"
 ---
 
