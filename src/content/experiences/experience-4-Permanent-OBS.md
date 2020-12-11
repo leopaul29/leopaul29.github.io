@@ -7,6 +7,7 @@ startdate: "09/2017"
 enddate: "06/2018"
 order: 4
 timelineclass: "is-primary"
+picture: "../../images/logo_soprasteria.png"
 ---
 
 <p>Design and develop a new solution for Orange Business Services, to manage the service activation from customer order until on-site installation around the world.</p>

@@ -7,6 +7,7 @@ startdate: "04/2014"
 enddate: "06/2014"
 order: 1
 timelineclass: "is-warning"
+picture: ""
 ---
 
 <p>Design and implement a Java ERP for the prevention of natural risks in direct relationship with the customer. The goal of this tool is to connect places, actors and actions to achieve against a natural risk to trigger proper emergency protocol.</p>
