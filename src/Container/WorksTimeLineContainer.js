@@ -47,6 +47,13 @@ const WorksTimeLineContainer = () => {
             startdate
             contract
             timelineclass
+            picture {
+              childImageSharp {
+                fixed(width: 48) {
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
           }
         }
       }
@@ -61,21 +68,38 @@ const WorksTimeLineContainer = () => {
       title,
       company,
       timelineclass,
+      picture,
     } = experience.frontmatter
+
     var titleConcat = contract + " " + title + " at " + company
     if (company === "") {
       titleConcat = title
     }
 
-    return (
-      <Link to={`#work${index}`}>
-        <WorksTimeLine
-          startdate={startdate}
-          title={titleConcat}
-          timelineclass={timelineclass}
-        />
-      </Link>
-    )
+    if (picture !== null) {
+      const { fixed } = picture.childImageSharp
+      return (
+        <Link to={`#work${index}`}>
+          <WorksTimeLine
+            startdate={startdate}
+            title={titleConcat}
+            timelineclass={timelineclass}
+            imageSource={fixed.src}
+          />
+        </Link>
+      )
+    } else {
+      return (
+        <Link to={`#work${index}`}>
+          <WorksTimeLine
+            startdate={startdate}
+            title={titleConcat}
+            timelineclass={timelineclass}
+            imageSource={"https://bulma.io/images/placeholders/48x48.png"}
+          />
+        </Link>
+      )
+    }
   }
 
   function printTimeLineHeader(title, timelineclass, icon) {
