@@ -1,6 +1,6 @@
 ---
 heading: " 👋 Hi, I'm Léo-Paul, Welcome to my portfolio !"
-image: ../../images/octocat-1607453320426.png
+picture: ../../images/octocat-1607453320426.png
 ---
 
 <p>I am a software developer with 3 years of work experiences at Sopra Steria in Nice-Sophia Antipolis, France.</p>
