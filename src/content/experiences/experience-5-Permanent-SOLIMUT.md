@@ -7,7 +7,7 @@ startdate: "06/2018"
 enddate: "11/2018"
 order: 5
 timelineclass: "is-primary"
-picture: "../../images/logo_soprasteria.png"
+picture: ../../images/logo_soprasteria.png
 ---
 
 <p>Design and develop a new solution for Groupe Solimut Mutuelles de France, to manage the relationship driven customer service.</p>
