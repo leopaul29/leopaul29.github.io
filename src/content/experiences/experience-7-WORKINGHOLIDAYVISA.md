@@ -7,7 +7,7 @@ startdate: "10/2019"
 enddate: "10/2020"
 order: 7
 timelineclass: "is-warning"
-picture: "../../images/japanese_flag.jpg"
+picture: ../../images/japanese_flag.jpg
 ---
 
 <ul>
