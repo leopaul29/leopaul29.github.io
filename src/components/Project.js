@@ -14,11 +14,17 @@ const Project = ({ title, techno, htmlDescription, github, live }) => {
 
   if (live === "") htmlLive = ""
 
+  const technoList = techno.split(',')
+  const technoTags = []
+  for (let i = 0; i < technoList.length; i++) {
+    technoTags.push(<span class="tag is-info is-light">{technoList[i]}</span>)
+  }
+
   return (
     <div className="card">
       <div className="card-content">
         <p className="title">{title}</p>
-        <p className="subtitle">{techno}</p>
+        <div class="tags">{technoTags}</div>
         <p dangerouslySetInnerHTML={{ __html: htmlDescription }} />
       </div>
       <footer className="card-footer">
