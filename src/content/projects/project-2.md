@@ -1,6 +1,6 @@
 ---
 title: "LeBonCoinEcole"
-techno: "Java Spring Boot"
+techno: "Java, Spring Boot"
 github: "https://github.com/leopaul29/Spring-LeBonCoinEcole"
 live: ""
 ---
