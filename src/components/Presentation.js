@@ -13,7 +13,7 @@ export const Presentation = ({
         <div className="container">
           <div className="columns">
             <div className="column is-2 is-offset-1">
-              <figure className="image is-128x128">
+              <figure className="image is-square">
                 <a
                   href="https://myoctocat.com/"
                   target="_blank"
@@ -28,7 +28,7 @@ export const Presentation = ({
               </figure>
             </div>
             <div className="column">
-              <h1 className="title has-text-link-dark">{heading}</h1>
+              <h1 className="title is-1 has-text-link-dark">{heading}</h1>
               <h2
                 className="subtitle"
                 dangerouslySetInnerHTML={{ __html: htmlDescription }}

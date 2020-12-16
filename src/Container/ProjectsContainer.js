@@ -23,27 +23,30 @@ const ProjectsContainer = () => {
   `)
 
   return (
-    <div class="columns is-multiline  ">
-      {data.allMarkdownRemark.nodes.map(project => {
-        const { title, techno, github, live } = project.frontmatter
-        const { html } = project
+    <>
+      <h2 className="title is-2 has-text-link-dark">Some Things I've built</h2>
+      <div class="columns is-multiline my-5">
+        {data.allMarkdownRemark.nodes.map(project => {
+          const { title, techno, github, live } = project.frontmatter
+          const { html } = project
 
-        return (
-          <div
-            key={project.id}
-            className="column is-one-mobile is-half-tablet is-one-third-desktop"
-          >
-            <Project
-              title={title}
-              techno={techno}
-              htmlDescription={html}
-              github={github}
-              live={live}
-            />
-          </div>
-        )
-      })}
-    </div>
+          return (
+            <div
+              key={project.id}
+              className="column is-one-mobile is-half-tablet is-one-third-desktop"
+            >
+              <Project
+                title={title}
+                techno={techno}
+                htmlDescription={html}
+                github={github}
+                live={live}
+              />
+            </div>
+          )
+        })}
+      </div>
+    </>
   )
 }
 
