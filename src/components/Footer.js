@@ -2,7 +2,7 @@ import React from "react"
 
 export default function Footer() {
   return (
-    <footer className="is-flex is-justify-content-center pt-5">
+    <footer className="is-flex is-justify-content-center my-5">
       <div className="content">
         © {new Date().getFullYear()}, Built with
         {` `}
