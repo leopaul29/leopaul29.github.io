@@ -26,9 +26,9 @@ export default function Navigation() {
           <Link className="navbar-item" to="#">
             Blog
           </Link>
-          <Link className="navbar-item" to="#">
+          <a className="navbar-item" href="mailto:leopaulmartin@hotmail.fr">
             Contact
-          </Link>
+          </a>
         </div>
       </div>
     </nav>
