@@ -9,6 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 
 import Navigation from "./Navigation"
+import Footer from "./Footer"
 
 const Layout = ({ children }) => {
   return (
@@ -16,6 +17,7 @@ const Layout = ({ children }) => {
       <div className="container">
         <Navigation />
         <main>{children}</main>
+        <Footer />
       </div>
     </>
   )
