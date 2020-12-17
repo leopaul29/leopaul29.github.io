@@ -4,14 +4,14 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "../css/works.css"
 import WorksTimeLineContainer from "../Container/WorksTimeLineContainer"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons"
 
 const WorksPage = () => {
   const data = useStaticQuery(graphql`
     {
       allMarkdownRemark(
-        filter: {
-          fileAbsolutePath: { regex: "/(experiences)/" }
-        }
+        filter: { fileAbsolutePath: { regex: "/(experiences)/" } }
         sort: { fields: frontmatter___order, order: DESC }
       ) {
         nodes {
@@ -30,6 +30,11 @@ const WorksPage = () => {
       }
     }
   `)
+  const arrowLeftIcon = (
+    <span class="icon mr-3 is-large ">
+      <FontAwesomeIcon icon={faArrowLeft} size="lg" />
+    </span>
+  )
 
   function printWorksTimeLine(experience, index) {
     const {
@@ -67,15 +72,15 @@ const WorksPage = () => {
       <SEO title="Works" />
       <div className="columns">
         <aside className="column is-4 is-narrow-mobile is-fullheight section is-hidden-mobile sidebar">
-          <p className="menu-label">Works</p>
-          <WorksTimeLineContainer />
           <div className="mt-5 has-text-centered">
             <Link to="/">
               <button className="button is-info is-rounded">
-                Go back to the homepage
+                {arrowLeftIcon}Go back to the homepage
               </button>
             </Link>
           </div>
+          <p className="menu-label">Works</p>
+          <WorksTimeLineContainer />
         </aside>
         <div className="column content">
           {data.allMarkdownRemark.nodes.map((experience, index) => {
