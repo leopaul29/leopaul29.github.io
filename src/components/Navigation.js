@@ -23,7 +23,12 @@ export default function Navigation() {
           <Link className="navbar-item" to="/works">
             Works
           </Link>
-          <Link className="navbar-item" to="#">
+          <Link
+            className="navbar-item"
+            to="https://lpm.hashnode.dev/"
+            target="_blank"
+            rel="noreferrer"
+          >
             Blog
           </Link>
           <a className="navbar-item" href="mailto:leopaulmartin@hotmail.fr">
