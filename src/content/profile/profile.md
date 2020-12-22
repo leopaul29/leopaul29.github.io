@@ -1,5 +1,5 @@
 ---
-heading: " 🚀 Hi, I'm Léo-Paul, Welcome to my portfolio !"
+heading: " 👋 Hi, I'm Léo-Paul, Welcome to my portfolio !"
 picture: ../../images/octocat-1607453320426.png
 ---
 
@@ -15,6 +15,3 @@ picture: ../../images/octocat-1607453320426.png
 
 <p class="pb-6">I'm trying to push some code every day on my 👉 <a href="https://github.com/leopaul29" target="_blank" class=" has-text-weight-semibold">Github</a>
 </p>
-
-<p>Passionate about Japanese culture 🏯 I like to watch <a href="https://anilist.co/user/Yrladd/" target="_blank" class=" has-text-weight-semibold">anime</a> and travel all around Japan to learn japanese, have fun and interesting talk with friends and eat everything 🍱 ! </p>
-<p>I also play 🎸 on my free time :)</p>
