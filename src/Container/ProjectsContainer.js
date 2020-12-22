@@ -24,11 +24,11 @@ const ProjectsContainer = () => {
 
   return (
     <section className="section">
-      <div class="container">
+      <div className="container">
         <h2 className="title is-2 has-text-link-dark">
           Some Things I've built
         </h2>
-        <div class="columns is-multiline my-5">
+        <div className="columns is-multiline my-5">
           {data.allMarkdownRemark.nodes.map(project => {
             const { title, techno, github, live } = project.frontmatter
             const { html } = project

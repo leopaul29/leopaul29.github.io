@@ -24,14 +24,18 @@ const Project = ({ title, techno, htmlDescription, github, live }) => {
   const technoList = techno.split(",")
   const technoTags = []
   for (let i = 0; i < technoList.length; i++) {
-    technoTags.push(<span class="tag is-info is-light">{technoList[i]}</span>)
+    technoTags.push(
+      <span key={i} className="tag is-info is-light">
+        {technoList[i]}
+      </span>
+    )
   }
 
   return (
     <article className="card">
       <div className="card-content">
         <p className="title">{title}</p>
-        <div class="tags">{technoTags}</div>
+        <div className="tags">{technoTags}</div>
         <p dangerouslySetInnerHTML={{ __html: htmlDescription }} />
       </div>
       <footer className="card-footer ">
@@ -39,15 +43,6 @@ const Project = ({ title, techno, htmlDescription, github, live }) => {
           {htmlGithub}
           {htmlLive}
         </div>
-        {/* <p className="card-footer-item">
-          <span>
-            View on{" "}
-            <a href={github} target="_blank" rel="noreferrer">
-              Github
-            </a>
-          </span>
-        </p>
-        {htmlLive} */}
       </footer>
     </article>
   )

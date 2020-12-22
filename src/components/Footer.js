@@ -17,17 +17,17 @@ export default function Footer() {
       <div className="content has-text-centered">
         <div>
           <a href={githubURL} target="_blank" rel="noreferrer">
-            <span class="icon pr-2 is-large">
+            <span className="icon pr-2 is-large">
               <FontAwesomeIcon icon={["fab", "github"]} size="2x" />
             </span>
           </a>
           <a href={linkedinURL} target="_blank" rel="noreferrer">
-            <span class="icon pr-2 is-large">
+            <span className="icon pr-2 is-large">
               <FontAwesomeIcon icon={["fab", "linkedin"]} size="2x" />
             </span>
           </a>
           <a href="mailto:leopaulmartin@hotmail.fr">
-            <span class="icon pr-2 is-large">
+            <span className="icon pr-2 is-large">
               <FontAwesomeIcon icon={["fas", "at"]} size="2x" />
             </span>
           </a>
