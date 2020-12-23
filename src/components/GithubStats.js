@@ -4,7 +4,7 @@ export default function GithubStats() {
   return (
     <section className="section has-background-info is-gradient is-rounded">
       <div className="container">
-        <h2 className="title is-2 has-text-white-ter has-text-right-desktop">
+        <h2 className="title is-2 has-text-white has-text-right-desktop">
           My Github Stats
           <span role="img" aria-label="emoji">
             ✨
@@ -19,6 +19,7 @@ export default function GithubStats() {
                 rel="noreferrer"
               >
                 <img
+                  width="450"
                   src="https://github-readme-stats.vercel.app/api?username=leopaul29&hide=contribs,issues&show_icons=true"
                   alt="Github stats"
                 />
@@ -31,6 +32,7 @@ export default function GithubStats() {
                 rel="noreferrer"
               >
                 <img
+                  width="350"
                   src="https://github-readme-stats.vercel.app/api/top-langs/?username=leopaul29&layout=compact&hide=C#"
                   alt="Top Langs"
                 />

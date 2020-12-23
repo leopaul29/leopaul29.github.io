@@ -16,17 +16,17 @@ export default function Footer() {
     <footer className=" footer">
       <div className="content has-text-centered">
         <div>
-          <a href={githubURL} target="_blank" rel="noreferrer">
+          <a href={githubURL} target="_blank" rel="noreferrer" aria-label="Github">
             <span className="icon pr-2 is-large">
               <FontAwesomeIcon icon={["fab", "github"]} size="2x" />
             </span>
           </a>
-          <a href={linkedinURL} target="_blank" rel="noreferrer">
+          <a href={linkedinURL} target="_blank" rel="noreferrer" aria-label="Linkedin">
             <span className="icon pr-2 is-large">
               <FontAwesomeIcon icon={["fab", "linkedin"]} size="2x" />
             </span>
           </a>
-          <a href="mailto:leopaulmartin@hotmail.fr">
+          <a href="mailto:leopaulmartin@hotmail.fr" aria-label="Contact">
             <span className="icon pr-2 is-large">
               <FontAwesomeIcon icon={["fas", "at"]} size="2x" />
             </span>
@@ -40,7 +40,7 @@ export default function Footer() {
           </p>
         </div>
         <div className="is-flex is-align-items-center is-justify-content-center">
-          <a href={gatsbyURL} target="_blank" rel="noreferrer">
+          <a href={gatsbyURL} target="_blank" rel="noreferrer" aria-label="Gatsby">
             <img
               src={gatsbyImageURL}
               alt="Made with Bulma"
@@ -48,7 +48,7 @@ export default function Footer() {
               height="24"
             />
           </a>
-          <a href={bulmaURM} target="_blank" rel="noreferrer">
+          <a href={bulmaURM} target="_blank" rel="noreferrer" aria-label="Bulma">
             <img
               src={madeWithBulmaImageURL}
               alt="Made with Bulma"
