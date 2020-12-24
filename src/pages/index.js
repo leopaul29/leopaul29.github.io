@@ -4,6 +4,7 @@ import SEO from "../components/seo"
 import PresentationContainer from "../Container/PresentationContainer"
 import ProjectsContainer from "../Container/ProjectsContainer"
 import GithubStats from "../components/GithubStats"
+import Contact from "../components/Contact"
 // import fontawesome icons
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { fab } from "@fortawesome/free-brands-svg-icons"
@@ -17,6 +18,7 @@ const IndexPage = () => {
       <PresentationContainer />
       <ProjectsContainer />
       <GithubStats />
+      <Contact />
     </Layout>
   )
 }
