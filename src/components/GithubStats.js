@@ -2,7 +2,7 @@ import React from "react"
 
 export default function GithubStats() {
   return (
-    <section className="section has-background-info is-gradient is-rounded">
+    <section className="section has-background-info is-gradient is-rounded my-5">
       <div className="container">
         <h2 className="title is-2 has-text-white has-text-right-desktop">
           My Github Stats
