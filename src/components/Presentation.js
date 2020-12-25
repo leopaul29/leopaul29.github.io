@@ -28,13 +28,13 @@ export const Presentation = ({
               className="subtitle"
               dangerouslySetInnerHTML={{ __html: htmlDescription }}
             />
-            {/* <a
+            <a
                 className="button is-danger"
                 href={downloadCVFile}
                 download={true}
               >
-                Télécharger mon CV
-              </a> */}
+                Download my Resume
+              </a>
           </div>
         </div>
       </div>
