@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { Presentation } from "../components/Presentation"
-import downloadCVFile from "../../src/content/CV_leopaulMARTIN_en.pdf"
+import downloadCVFile from "../../src/content/CV_leopaulMARTIN_en_2020-12_for_download.pdf"
 
 const PresentationContainer = () => {
   const data = useStaticQuery(graphql`
