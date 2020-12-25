@@ -13,5 +13,5 @@ picture: ../../images/octocat-1607453320426.png
 <li>📚 I'm planning to learn Typescript and Angular</li>
 </ul>
 
-<p class="pb-6">I'm trying to push some code every day on my 👉 <a href="https://github.com/leopaul29" target="_blank" class=" has-text-weight-semibold" rel="noreferrer">Github</a>
+<p>I'm trying to push some code every day on my 👉 <a href="https://github.com/leopaul29" target="_blank" class=" has-text-weight-semibold" rel="noreferrer">Github</a>
 </p>
