@@ -7,11 +7,9 @@ picture: ../../images/octocat-1607453320426.png
 
 <ul class="py-3">
 <li>⚙️ I used to develop Backend application with Spring Boot and PHP</li>
-<li>🎮 I sometimes work on a prototype RPG with Unity</li>
-<li>🔭 I’m currently working on my portfolio</li>
 <li>🌱 I’m currently learning ReactJs and Gatsby</li>
-<li>📚 I'm planning to learn Typescript and Angular</li>
+<li>🔭 I’m currently working on my portfolio</li>
 </ul>
 
-<p>I'm trying to push some code every day on my 👉 <a href="https://github.com/leopaul29" target="_blank" class=" has-text-weight-semibold" rel="noreferrer">Github</a>
+<p>Follow my <a href="https://twitter.com/hashtag/100DaysOfCode?src=hashtag_click" target="_blank" class=" has-text-link" rel="noreferrer">#100DaysOfCode</a> on my 👉 <a href="https://github.com/leopaul29" target="_blank" class=" has-text-weight-semibold" rel="noreferrer">Github</a>
 </p>
