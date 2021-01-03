@@ -23,10 +23,10 @@ const ProjectsContainer = () => {
   `)
 
   return (
-    <section className="section">
+    <section className="section" id="projects">
       <div className="container">
         <h2 className="title is-2 has-text-link-dark">
-          Some Things I've built
+          Recent Projects
         </h2>
         <div className="columns is-multiline my-5">
           {data.allMarkdownRemark.nodes.map(project => {

@@ -20,6 +20,9 @@ export default function Navigation() {
 
       <div id="navbarBasicExample" className="navbar-menu">
         <div className="navbar-end">
+          <Link className="navbar-item" to="/#projects">
+            Projects
+          </Link>
           <Link className="navbar-item" to="/works">
             Works
           </Link>
@@ -31,9 +34,9 @@ export default function Navigation() {
           >
             Blog
           </a>
-          <a className="navbar-item" href="mailto:leopaulmartin@hotmail.fr">
-            Contact
-          </a>
+          <Link className="navbar-item" to="/#contact">
+          Contact
+          </Link>
         </div>
       </div>
     </nav>

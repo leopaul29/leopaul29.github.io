@@ -7,7 +7,7 @@ export const Presentation = ({
   profileImageSource,
   downloadCVFile,
 }) => (
-  <section className="hero is-large is-info is-bold mb-6">
+  <section className="hero is-medium mb-6">
     <div className="hero-body">
       <div className="container">
         <div className="columns">

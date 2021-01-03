@@ -2,7 +2,7 @@ import React from "react"
 
 export default function Contact() {
   return (
-    <section className="section my-5">
+    <section className="section my-5" id="contact">
       <div className="container">
         <h2 className="title is-2 has-text-link-dark has-text-centered">
           Get In Touch
