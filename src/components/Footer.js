@@ -6,6 +6,7 @@ export default function Footer() {
   const githubURL = "https://github.com/leopaul29"
   const linkedinURL =
     "https://www.linkedin.com/in/l%C3%A9o-paul-martin-882158a9/"
+    const twitterURL = "https://twitter.com/lpm_29"
   const gatsbyURL = "https://www.gatsbyjs.com"
   const gatsbyImageURL =
     "https://www.gatsbyjs.com/static/2c9d8be34028a568f89f36ef143f3e17/a3df1/local-futura.jpg"
@@ -24,6 +25,11 @@ export default function Footer() {
           <a href={linkedinURL} target="_blank" rel="noreferrer" aria-label="Linkedin">
             <span className="icon pr-2 is-large">
               <FontAwesomeIcon icon={["fab", "linkedin"]} size="2x" />
+            </span>
+          </a>
+          <a href={twitterURL} target="_blank" rel="noreferrer" aria-label="Twitter">
+            <span className="icon pr-2 is-large">
+              <FontAwesomeIcon icon={["fab", "twitter"]} size="2x" />
             </span>
           </a>
           <a href="mailto:leopaulmartin@hotmail.fr" aria-label="Contact">
