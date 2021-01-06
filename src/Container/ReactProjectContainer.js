@@ -2,11 +2,11 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Project from "../components/Project"
 
-const ProjectsContainer = () => {
+const ReactProjectContainer = () => {
   const data = useStaticQuery(graphql`
     {
       allMarkdownRemark(
-        filter: { frontmatter: { techno: { regex: "/^((?!ReactJs).)*$/" } } }
+        filter: { frontmatter: { techno: { regex: "/(ReactJs)/" } } }
       ) {
         nodes {
           id
@@ -25,7 +25,7 @@ const ProjectsContainer = () => {
   return (
     <section className="section" id="projects">
       <div className="container">
-        <h2 className="title is-2 has-text-link-dark">Other Projects</h2>
+        <h2 className="title is-2 has-text-link-dark">React Projects focus</h2>
         <div className="columns is-multiline my-5">
           {data.allMarkdownRemark.nodes.map(project => {
             const { title, techno, github, live } = project.frontmatter
@@ -52,4 +52,4 @@ const ProjectsContainer = () => {
   )
 }
 
-export default ProjectsContainer
+export default ReactProjectContainer

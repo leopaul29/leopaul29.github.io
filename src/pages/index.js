@@ -8,6 +8,7 @@ import Contact from "../components/Contact"
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { fab } from "@fortawesome/free-brands-svg-icons"
 import { fas } from "@fortawesome/free-solid-svg-icons"
+import ReactProjectContainer from "../Container/ReactProjectContainer"
 library.add(fab, fas)
 
 const IndexPage = () => {
@@ -15,6 +16,7 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Home" />
       <PresentationContainer />
+      <ReactProjectContainer/>
       <ProjectsContainer />
       <Contact />
     </Layout>
