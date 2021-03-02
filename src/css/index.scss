@@ -1,5 +1,8 @@
 @charset "utf-8";
 
+html {
+  scroll-behavior: smooth;
+}
 .navbar-item:hover {
   background-color: white !important;
 }
