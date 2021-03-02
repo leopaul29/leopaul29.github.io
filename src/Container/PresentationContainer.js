@@ -1,7 +1,10 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { Presentation } from "../components/Presentation"
-import downloadCVFile from "../../src/content/CV_leopaulMARTIN_en_2020-12_for_download.pdf"
+import CVFRfile from "../../src/content/storage/cv_leopaulmartin_fr_2021.pdf"
+import ResumeENfile from "../../src/content/storage/resume_leopaulmartin_en_2021.pdf"
+import RirekishoJPfile from "../../src/content/storage/履歴書.pdf"
+import ShokumukeirekishoJPfile from "../../src/content/storage/職務経歴書.pdf"
 
 const PresentationContainer = () => {
   const data = useStaticQuery(graphql`
@@ -9,8 +12,9 @@ const PresentationContainer = () => {
       markdownRemark(fileAbsolutePath: { regex: "/(profile)/" }) {
         id
         frontmatter {
-          heading
-          picture {
+          title
+          subtitle
+          avatar {
             childImageSharp {
               fixed(width: 500) {
                 ...GatsbyImageSharpFixed
@@ -24,15 +28,19 @@ const PresentationContainer = () => {
   `)
 
   const { frontmatter, html } = data.markdownRemark
-  const { heading, picture } = frontmatter
-  const { fixed } = picture.childImageSharp
+  const { title, avatar, subtitle } = frontmatter
+  const { fixed } = avatar.childImageSharp
 
   return (
     <Presentation
-      heading={heading}
+      title={title}
+      subtitle={subtitle}
       htmlDescription={html}
-      profileImageSource={fixed.src}
-      downloadCVFile={downloadCVFile}
+      avatar={fixed.src}
+      CVFRfile={CVFRfile}
+      ResumeENfile={ResumeENfile}
+      RirekishoJPfile={RirekishoJPfile}
+      ShokumukeirekishoJPfile={ShokumukeirekishoJPfile}
     />
   )
 }
