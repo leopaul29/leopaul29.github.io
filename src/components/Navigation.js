@@ -3,7 +3,7 @@ import React from "react"
 
 const Navigation = () => {
   return (
-    <nav className="navbar" role="navigation" aria-label="main navigation">
+    <nav className="navbar mt-5" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
         <Link
           role="button"
@@ -34,9 +34,19 @@ const Navigation = () => {
           >
             Blog
           </a>
-          <Link className="navbar-item" to="/#contact">
-            Contact
-          </Link>
+
+          <div className="navbar-item">
+            <div className="field ">
+              <p className="control">
+                <a
+                  className="button is-link is-outlined is-rounded"
+                  href="mailto:leopaulmartin@hotmail.fr"
+                >
+                  Contact
+                </a>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
