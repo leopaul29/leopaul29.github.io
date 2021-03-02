@@ -1,4 +1,8 @@
 @charset "utf-8";
 
+.navbar-item:hover {
+  background-color: white !important;
+}
+
 @import "~bulma/bulma.sass";
-@import "~bulma-timeline"
+@import "~bulma-timeline";
