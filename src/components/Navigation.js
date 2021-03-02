@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
 
-export default function Navigation() {
+const Navigation = () => {
   return (
     <nav className="navbar" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
@@ -23,9 +23,9 @@ export default function Navigation() {
           <Link className="navbar-item" to="/#projects">
             Projects
           </Link>
-          <Link className="navbar-item" to="/works">
+          {/* <Link className="navbar-item" to="/works">
             Works
-          </Link>
+          </Link> */}
           <a
             className="navbar-item"
             href="https://lpm.hashnode.dev/"
@@ -35,10 +35,12 @@ export default function Navigation() {
             Blog
           </a>
           <Link className="navbar-item" to="/#contact">
-          Contact
+            Contact
           </Link>
         </div>
       </div>
     </nav>
   )
 }
+
+export default Navigation
