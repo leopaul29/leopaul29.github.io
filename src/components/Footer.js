@@ -14,7 +14,7 @@ export default function Footer() {
   const madeWithBulmaImageURL = "https://bulma.io/images/made-with-bulma.png"
 
   return (
-    <footer className=" footer">
+    <footer className="footer has-background-light" id="footer">
       <div className="content has-text-centered">
         <div>
           <a href={githubURL} target="_blank" rel="noreferrer" aria-label="Github">
