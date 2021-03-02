@@ -35,9 +35,9 @@ const Navigation = () => {
             Blog
           </a>
 
-          <div class="navbar-item">
-            <div class="field ">
-              <p class="control">
+          <div className="navbar-item">
+            <div className="field ">
+              <p className="control">
                 <a
                   className="button is-link is-outlined is-rounded"
                   href="mailto:leopaulmartin@hotmail.fr"
