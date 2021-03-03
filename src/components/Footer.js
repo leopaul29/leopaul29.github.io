@@ -9,8 +9,6 @@ export default function Footer() {
     "https://www.linkedin.com/in/l%C3%A9o-paul-martin-882158a9/"
   const twitterURL = "https://twitter.com/leopaul29"
   const gatsbyURL = "https://www.gatsbyjs.com"
-  const gatsbyImageURL =
-    "https://www.gatsbyjs.com/static/2c9d8be34028a568f89f36ef143f3e17/a3df1/local-futura.jpg"
   const bulmaURM = "https://bulma.io"
   const madeWithBulmaImageURL =
     "https://bulma.io/images/made-with-bulma--white.png"

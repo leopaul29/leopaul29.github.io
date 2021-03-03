@@ -16,6 +16,7 @@ const Navigation = () => {
             className="navbar-burger"
             aria-label="menu"
             aria-expanded="false"
+            to="/"
           >
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
@@ -25,7 +26,7 @@ const Navigation = () => {
 
         <div id="navbarBasicExample" className="navbar-menu">
           <div className="navbar-end">
-            <Link className="navbar-item" to="/#projects">
+            <Link className="navbar-item" to="/#top-projects">
               Projects
             </Link>
             {/* <Link className="navbar-item" to="/works">

@@ -9,6 +9,9 @@
   .navbar-item:hover {
     background-color: white !important;
   }
+  .navbar-item:focus-within {
+    background-color: white !important;
+  }
   .logo__img{
     min-height: 130px;
   }

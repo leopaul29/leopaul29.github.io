@@ -32,10 +32,10 @@ export const Presentation = ({
               className="content"
               dangerouslySetInnerHTML={{ __html: htmlDescription }}
             ></div>
-            <div class="dropdown is-hoverable">
-              <div class="dropdown-trigger">
+            <div className="dropdown is-hoverable">
+              <div className="dropdown-trigger">
                 <button
-                  class="button is-link is-outlined is-rounded"
+                  className="button is-link is-outlined is-rounded"
                   aria-haspopup="true"
                   aria-controls="dropdown-menu"
                 >
@@ -45,26 +45,26 @@ export const Presentation = ({
                   </span>
                 </button>
               </div>
-              <div class="dropdown-menu" id="dropdown-menu" role="menu">
-                <div class="dropdown-content">
-                  <a href={CVFRfile} download={true} class="dropdown-item">
+              <div className="dropdown-menu" id="dropdown-menu" role="menu">
+                <div className="dropdown-content">
+                  <a href={CVFRfile} download={true} className="dropdown-item">
                     CV Français
                   </a>
-                  <a href={ResumeENfile} download={true} class="dropdown-item">
+                  <a href={ResumeENfile} download={true} className="dropdown-item">
                     English Resume
                   </a>
-                  <hr class="dropdown-divider" />
+                  <hr className="dropdown-divider" />
                   <a
                     href={RirekishoJPfile}
                     download={true}
-                    class="dropdown-item"
+                    className="dropdown-item"
                   >
                     履歴書
                   </a>
                   <a
                     href={ShokumukeirekishoJPfile}
                     download={true}
-                    class="dropdown-item"
+                    className="dropdown-item"
                   >
                     職務経歴書
                   </a>
