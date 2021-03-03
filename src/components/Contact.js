@@ -3,7 +3,8 @@ import "../css/Contact.css"
 
 export default function Contact() {
   return (
-    <section className="section  has-text-white has-background-light mt-6">
+    <section className="section has-text-white has-background-info mt-6">
+      <div className="container">
       <div
         className="columns is-align-items-center has-text-centered has-background-link-dark mx-6 py-3"
         id="contact"
@@ -25,7 +26,7 @@ export default function Contact() {
             Say Hello
           </a>
         </div>
-      </div>
+      </div></div>
     </section>
   )
 }

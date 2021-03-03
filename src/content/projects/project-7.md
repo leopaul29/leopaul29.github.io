@@ -1,8 +1,7 @@
----
-title: "Messenger clone"
-techno: "ReactJs, React-Flip-Move, Material-ui, Flexbox-css, Firebase"
-github: "https://github.com/leopaul29/facebook-messenger-clone"
-live: "https://facebook-messenger-clone-8cc6b.web.app/"
+title: "React Music Player"
+techno: "Hackathon, Music-player, Animations, Vercel"
+github: "https://github.com/leopaul29/react-music-player"
+live: "https://custom-music-player.vercel.app"
 ---
 
-<p>React Facebook-messenger clone</p>
+<p>Music player with animation for Hashnode and Vercel Hackathon</p>

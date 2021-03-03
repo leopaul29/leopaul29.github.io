@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  .navbar-item:hover {
+    background-color: white !important;
+  }
+  .navbar-item:focus-within {
+    background-color: white !important;
+  }
+  .logo__img{
+    min-height: 130px;
+  }
+  .hero-foot{
+    padding-top: 80px;
+    max-width: 650px;
+    margin: auto;
+  }
+  #top-projects{
+  margin-top: -10px
+  }
+  /* contact */
+  
+  /* footer */
+  .social-icons{
+    margin: 0 auto 3rem;
+  }
+  .social-icons .button {
+      margin: 0 12px;
+      border-radius: 100%;
+  }
+  .copyright {
+    opacity: 0.7;
+  }
