@@ -17,9 +17,11 @@
     max-width: 650px;
     margin: auto;
   }
-  #projects{
+  #top-projects{
   margin-top: -10px
   }
+  /* contact */
+  
   /* footer */
   .social-icons{
     margin: 0 auto 3rem;
