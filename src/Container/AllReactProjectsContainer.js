@@ -6,7 +6,7 @@ const AllProjectsContainer = () => {
   const data = useStaticQuery(graphql`
     {
       allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/(projects)/" } }
+        filter: { frontmatter: { techno: { regex: "/(ReactJs)/" } } }
       ) {
         nodes {
           id
@@ -23,11 +23,12 @@ const AllProjectsContainer = () => {
   `)
 
   return (
-    <section className="projects section has-background-link-dark">
+    <section
+      className="projects section has-background-link-dark"
+      id="top-projects"
+    >
       <div className="container">
-        <h2 className="title is-2 has-text-link-dark">
-          Recent Projects
-        </h2>
+        <h2 className="title is-2 has-text-white">Recent ReactJs Projects</h2>
         <div className="columns is-multiline my-5">
           {data.allMarkdownRemark.nodes.map(project => {
             const { title, techno, github, live } = project.frontmatter
