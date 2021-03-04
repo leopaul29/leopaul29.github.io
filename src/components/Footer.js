@@ -1,7 +1,8 @@
 import React from "react"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import GatsbyLogo from "../images/gatsby-logo.svg"
+import GatsbyLogo from "../images/gatsby-logo--black.svg"
+import madeWithBulmaLogo from "../images/made-with-bulma--semiblack.png"
 
 export default function Footer() {
   const githubURL = "https://github.com/leopaul29"
@@ -10,8 +11,6 @@ export default function Footer() {
   const twitterURL = "https://twitter.com/leopaul29"
   const gatsbyURL = "https://www.gatsbyjs.com"
   const bulmaURM = "https://bulma.io"
-  const madeWithBulmaImageURL =
-    "https://bulma.io/images/made-with-bulma--white.png"
 
   return (
     <footer className="footer has-background-info has-text-centered">
@@ -83,7 +82,7 @@ export default function Footer() {
               aria-label="Bulma"
             >
               <img
-                src={madeWithBulmaImageURL}
+                src={madeWithBulmaLogo}
                 alt="Made with Bulma"
                 width="128"
                 height="24"
@@ -99,7 +98,7 @@ export default function Footer() {
             >
               <img
                 src={GatsbyLogo}
-                alt="Made with Bulma"
+                alt="Gatsby"
                 width="128"
                 height="24"
               />
