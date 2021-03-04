@@ -50,7 +50,11 @@ export const Presentation = ({
                   <a href={CVFRfile} download={true} className="dropdown-item">
                     CV Français
                   </a>
-                  <a href={ResumeENfile} download={true} className="dropdown-item">
+                  <a
+                    href={ResumeENfile}
+                    download={true}
+                    className="dropdown-item"
+                  >
                     English Resume
                   </a>
                   <hr className="dropdown-divider" />
@@ -75,7 +79,11 @@ export const Presentation = ({
         </div>
       </div>
       <div className="hero-foot">
-        <img src={hero} alt="hero" />
+        <div className="columns is-centered is-mobile">
+          <div className="column is-7">
+            <img src={hero} alt="hero" />
+          </div>
+        </div>
       </div>
     </div>
   </section>
