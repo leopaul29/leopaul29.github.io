@@ -68,7 +68,7 @@ export default function Footer() {
               href={githubURL}
               target="_blank"
               rel="noreferrer"
-              className="has-text-white"
+              className="has-text-black"
             >
               © {new Date().getFullYear()}, Design and Built by Léo-Paul MARTIN
             </a>
