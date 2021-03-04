@@ -1,20 +1,33 @@
 import { Link } from "gatsby"
 import React from "react"
-import avatar from "../images/octocat-1607453320426.png"
+import { useStaticQuery, graphql } from "gatsby"
 
 const Navigation = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      placeholderImage: file(
+        relativePath: { eq: "octocat-1607453320426.png" }
+      ) {
+        childImageSharp {
+          fluid(maxWidth: 150) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+  const avatar = data.placeholderImage.childImageSharp.fluid.src
   return (
     <nav className="navbar py-3" role="navigation" aria-label="main navigation">
       <div className="container">
         <div className="navmenu">
           <div className="navbar-brand">
             <a
-              className="navbar-item"
               href="https://myoctocat.com/"
               target="_blank"
               rel="noreferrer"
             >
-              <img className="logo__img" src={avatar} alt="logo" />
+              <img src={avatar} alt="logo" />
             </a>
           </div>
 
