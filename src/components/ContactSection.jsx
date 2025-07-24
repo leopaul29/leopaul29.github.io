@@ -93,16 +93,16 @@ const ContactSection = () => {
                   専任の開発者をお探しの場合でも、日本の技術シーンについて話し合いたい場合でも、
                   私は常に有意義な会話を歓迎します。
                 </p>
-                <div className="space-y-3">
-                  <div className="flex items-center space-x-3 text-gray-600">
-                    <Mail size={18} className="text-blue-600" />
-                    <span>your.email@example.com</span>
-                  </div>
-                  <div className="flex items-center space-x-3 text-gray-600">
-                    <MessageCircle size={18} className="text-blue-600" />
-                    <span>Available for remote collaboration</span>
-                  </div>
-                </div>
+                {/*<div className="space-y-3">*/}
+                {/*  <div className="flex items-center space-x-3 text-gray-600">*/}
+                {/*    <Mail size={18} className="text-blue-600" />*/}
+                {/*    <span>your.email@example.com</span>*/}
+                {/*  </div>*/}
+                {/*  <div className="flex items-center space-x-3 text-gray-600">*/}
+                {/*    <MessageCircle size={18} className="text-blue-600" />*/}
+                {/*    <span>Available for remote collaboration</span>*/}
+                {/*  </div>*/}
+                {/*</div>*/}
               </CardContent>
             </Card>
 
@@ -116,7 +116,7 @@ const ContactSection = () => {
               <ul className="space-y-2 text-blue-100">
                 <li>• Passionate about Japanese work culture and values</li>
                 <li>• Strong technical skills in modern web technologies</li>
-                <li>• International perspective with local appreciation</li>
+                {/*<li>• International perspective with local appreciation</li>*/}
                 <li>• Committed to continuous learning and improvement</li>
               </ul>
             </motion.div>

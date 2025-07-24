@@ -13,7 +13,7 @@ const ActiveLearningSection = () => {
       score: 'Top 5%',
       description: 'Cybersecurity training',
       descriptionJp: 'サイバーセキュリティ',
-      link: 'https://tryhackme.com'
+      link: 'https://tryhackme.com/p/K33f1mof0B'
     },
     {
       name: 'Frontend Mentor',
@@ -21,7 +21,7 @@ const ActiveLearningSection = () => {
       score: '15,000+ XP',
       description: 'Real-world UI challenges',
       descriptionJp: 'UIチャレンジ',
-      link: 'https://www.frontendmentor.io'
+      link: 'https://www.frontendmentor.io/profile/leopaul29'
     },
     {
       name: 'Codewars',
@@ -37,7 +37,7 @@ const ActiveLearningSection = () => {
       score: '200+ Solved',
       description: 'Algorithm practice',
       descriptionJp: 'アルゴリズム練習',
-      link: 'https://leetcode.com'
+      link: 'https://leetcode.com/u/user9456pv/'
     }
   ];
 
