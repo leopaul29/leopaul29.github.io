@@ -163,8 +163,8 @@ const AboutSection = () => {
               </div>
               <div className="relative">
                 <motion.div whileHover={{ scale: 1.05 }} className="relative">
-                  <img alt="Beautiful Japanese landscape with cherry blossoms" className="w-full h-64 object-cover rounded-xl shadow-lg" src="https://images.unsplash.com/photo-1560951112-9be2f5e8a81d" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-xl" />
+                  <img className="w-64 m-auto"
+                      src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2F474x%2F32%2F3b%2Fee%2F323bee20461c3e40a733d3d1f4031ca1--pine-tree-fireworks.jpg&f=1&nofb=1&ipt=26c2c581a4a617b396b06d659ee41d1320d78a1a68db9db2908d0b9656441a3a"/>
                 </motion.div>
               </div>
             </div>
