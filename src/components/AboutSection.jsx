@@ -242,6 +242,7 @@ const AboutSection = () => {
               </CardHeader>
               <CardContent className="flex flex-col flex-grow">
                 <p className="text-gray-600 text-sm mb-4">{project.description}</p>
+                <p className="text-gray-500 text-sm">{project.descriptionJp}</p>
                 <div className="mt-auto">
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tech.map((tech) => (<span key={tech} className="px-2 py-1 bg-gray-100 text-gray-700 rounded text-xs font-medium">{tech}</span>))}
