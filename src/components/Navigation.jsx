@@ -8,7 +8,7 @@ const Navigation = ({ activeSection, setActiveSection }) => {
   const navItems = [
     { id: 'hero', label: 'Home', labelJp: 'ホーム' },
     { id: 'about', label: 'About', labelJp: 'について' },
-    // { id: 'learning', label: 'Learning', labelJp: '学習' },
+    { id: 'learning', label: 'Learning', labelJp: '学習' },
     { id: 'projects', label: 'Projects', labelJp: 'プロジェクト' },
     { id: 'contact', label: 'Contact', labelJp: 'お問い合わせ' }
   ];
@@ -80,7 +80,7 @@ const Navigation = ({ activeSection, setActiveSection }) => {
             <div className="flex items-center space-x-4 ml-6 pl-6 border-l border-gray-300">
               <motion.a
                 whileHover={{ scale: 1.1 }}
-                href="https://github.com/leopaul29"
+                href="https://github.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:text-gray-900"
@@ -89,7 +89,7 @@ const Navigation = ({ activeSection, setActiveSection }) => {
               </motion.a>
               <motion.a
                 whileHover={{ scale: 1.1 }}
-                href="https://linkedin.com/in/leo-paul-martin/"
+                href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:text-gray-900"
@@ -144,7 +144,7 @@ const Navigation = ({ activeSection, setActiveSection }) => {
             <div className="flex items-center space-x-4 mt-4 pt-4 border-t border-gray-200">
               <motion.a
                 whileHover={{ scale: 1.1 }}
-                href="https://github.com/leopaul29"
+                href="https://github.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:text-gray-900"
@@ -153,7 +153,7 @@ const Navigation = ({ activeSection, setActiveSection }) => {
               </motion.a>
               <motion.a
                 whileHover={{ scale: 1.1 }}
-                href="https://www.linkedin.com/in/leo-paul-martin/"
+                href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:text-gray-900"

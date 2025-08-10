@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, MapPin, Linkedin } from 'lucide-react';
@@ -21,7 +20,7 @@ const HeroSection = () => {
               transition={{ delay: 0.2 }}
               className="text-blue-600 font-medium text-lg"
             >
-              Hello, I'm Leo / はじめまして、レオと申します。
+              Hello, I'm / こんにちは
             </motion.p>
             
             <motion.h1
@@ -74,20 +73,20 @@ const HeroSection = () => {
           >
             <Button
               className="btn-primary group"
-              onClick={() => window.open('https://www.linkedin.com/in/leo-paul-martin/', '_blank')}
+              onClick={() => window.open('https://linkedin.com', '_blank')}
             >
               Connect on LinkedIn
               <Linkedin className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Button>
             
-            {/*<Button*/}
-            {/*  variant="outline"*/}
-            {/*  className="btn-secondary group"*/}
-            {/*  onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}*/}
-            {/*>*/}
-            {/*  Get in Touch*/}
-            {/*  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />*/}
-            {/*</Button>*/}
+            <Button
+              variant="outline"
+              className="btn-secondary group"
+              onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
+            >
+              Get in Touch
+              <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+            </Button>
           </motion.div>
 
           <motion.div
@@ -132,7 +131,7 @@ const HeroSection = () => {
               <img  
                 alt="Developer avatar from GitHub"
                 className="w-80 h-80 rounded-2xl object-cover shadow-2xl mx-auto"
-               src="https://avatars.githubusercontent.com/u/10078357?v=4" />
+               src="https://images.unsplash.com/photo-1636369555100-e0ba574af653" />
             </motion.div>
             
             <motion.div
