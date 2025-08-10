@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<svg width="640" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+ <defs>
+  <filter id="svg_12_blur">
+   <feGaussianBlur in="SourceGraphic" stdDeviation="3"/>
+  </filter>
+ </defs>
+ <g class="layer">
+  <title>Layer 1</title>
+  <path d="m7.3,391.19l0,-383.92l386,0l0,383.92l-386,0z" fill="#ff0000" filter="url(#svg_12_blur)" id="svg_12" stroke="#aad4ff" stroke-width="10" transform="matrix(1 0 0 1 0 0)"/>
+  <text fill="#ffffff" font-family="Serif" font-size="180" id="svg_11" stroke="#ff0000" stroke-width="0" text-anchor="middle" x="294.58" xml:space="preserve" y="340.49">雄</text>
+  <text fill="#ffffff" font-family="Serif" font-size="180.08" id="svg_10" stroke="#ff0000" stroke-width="0" text-anchor="middle" transform="matrix(1 0 0 1 0 0)" x="109.62" xml:space="preserve" y="343.17">玲</text>
+  <text fill="#ffffff" font-family="Monospace" font-size="179" id="svg_9" stroke="#ff0000" stroke-width="0" text-anchor="middle" x="199.18" xml:space="preserve" y="167.56">LEO</text>
+ </g>
+</svg>
