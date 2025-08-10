@@ -146,9 +146,9 @@ const HeroSection = () => {
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="relative"
+              className="relative px-8"
           >
-            <div className="relative">
+            <div className="relative" >
               <motion.div
                   animate={{ rotate: [0, 5, -5, 0], scale: [1, 1.02, 1] }}
                   transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
