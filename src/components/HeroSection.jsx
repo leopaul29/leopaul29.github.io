@@ -4,6 +4,8 @@ import {ArrowRight, Linkedin, MapPin} from 'lucide-react';
 import {Button} from '@/components/ui/button';
 import * as Tooltip from '@radix-ui/react-tooltip';
 import {PremiumTooltip} from "@/components/ui/tooltip.jsx";
+import avatarImage from '/images/avatar-developer-transparent.png';
+
 
 const skills = [
   { name: 'React' },
@@ -155,7 +157,7 @@ const HeroSection = () => {
                 <img
                     alt="Developer avatar from GitHub"
                     className="w-80 h-80 rounded-2xl object-cover shadow-2xl mx-auto"
-                    src="https://images.unsplash.com/photo-1636369555100-e0ba574af653"
+                    src={avatarImage}
                 />
               </motion.div>
 
