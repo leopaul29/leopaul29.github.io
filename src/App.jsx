@@ -7,6 +7,7 @@ import ProjectsSection from '@/components/ProjectsSection';
 import ContactSection from '@/components/ContactSection';
 import { Toaster } from '@/components/ui/toaster';
 import { Github, Linkedin, BookOpen, Mail } from 'lucide-react';
+import logo from "/logo.svg";
 
 function App() {
   const [activeSection, setActiveSection] = useState('hero');
@@ -63,7 +64,12 @@ function App() {
         <footer className="bg-gray-900 text-white pt-16 pb-8 px-4">
           <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
             <div>
-              <h3 className="font-bold text-xl gradient-text mb-4">Portfolio</h3>
+              {/*<h3 className="font-bold text-xl gradient-text mb-4">Portfolio</h3>*/}
+              <img
+                  alt="logo"
+                  className=" h-40  object-cover shadow-2xl "
+                  src={logo}
+              />
               <p className="text-gray-400 text-sm">Passionate web developer seeking opportunities in Japan. Let's build something amazing together.</p>
               <p className="text-gray-500 text-xs mt-2">日本での機会を探している情熱的なウェブ開発者。</p>
             </div>
