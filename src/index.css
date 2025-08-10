@@ -87,7 +87,7 @@ body {
 }
 
 .modal-content {
-  @apply fixed left-1/2 top-1/2 z-50 w-[90vw] max-w-2xl -translate-x-1/2 -translate-y-1/2 rounded-2xl bg-white p-6 shadow-2xl;
+  @apply fixed left-1/2 top-1/2 z-50 w-[90vw] max-w-4xl -translate-x-1/2 -translate-y-1/2 rounded-2xl bg-white p-6 shadow-2xl;
   opacity: 0;
   transform: translate(-50%, -50%) scale(0.95);
   transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;

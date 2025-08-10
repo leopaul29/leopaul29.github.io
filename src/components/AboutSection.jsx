@@ -1,6 +1,27 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Plane, Heart, Code, Globe, PenTool, BrainCircuit, BookOpen, Box as Cube, Github, ExternalLink, Laptop, TerminalSquare, Trophy, Star, Target, Puzzle, BarChart, ShieldCheck, Bot } from 'lucide-react';
+import {
+  Plane,
+  Heart,
+  Code,
+  Globe,
+  PenTool,
+  BrainCircuit,
+  BookOpen,
+  Box as Cube,
+  Github,
+  ExternalLink,
+  Laptop,
+  TerminalSquare,
+  Trophy,
+  Star,
+  Target,
+  Puzzle,
+  BarChart,
+  ShieldCheck,
+  Bot,
+  Gamepad2
+} from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from '@/components/ui/carousel';
 import { Button } from '@/components/ui/button';
 import Modal from '@/components/ui/modal';
@@ -34,9 +55,11 @@ const AboutSection = () => {
     { name: 'Kaggle', icon: <BarChart className="w-6 h-6 text-sky-500" />, description: 'Data Science competitions' },
     { name: 'Secure Code Warrior', icon: <ShieldCheck className="w-6 h-6 text-indigo-500" />, description: 'Secure coding skills' },
     { name: 'Hugging Face', icon: <Bot className="w-6 h-6 text-yellow-400" />, description: 'AI & ML models' },
+      // global game jam profile
   ];
 
   const emergingTechProjects = [
+    { title: "RobotBattle", titleJp: "ロボットバトル", icon: <Gamepad2 className="w-10 h-10 text-yellow-400" />, description: "Created during the 2020 Global Game Jam in Okinawa, RobotBattle is a 2D strategy game where players control robots that can attack and repair themselves, balancing offense and defense under a limited energy system.", descriptionJp: "2020年の沖縄グローバルゲームジャムで制作したロボットバトルは、攻撃と修理を駆使し、限られたエネルギーで戦う2D戦略ゲームです。", projectTitle: "RobotBattle", tech: ["Unity", "C#"], image: "2D strategy game featuring robot battles with attack and repair mechanics", codeUrl:"https://github.com/leopaul29/RobotBattle", detailUrl:"https://v3.globalgamejam.org/2020/games/robotbattle-1" },
     { title: "Blockchain Development", titleJp: "ブロックチェーン開発", icon: <Cube className="w-10 h-10 text-purple-500" />, description: "After a 3-month course, I built a decentralized NFT marketplace on the Ethereum testnet, allowing users to mint and trade unique digital assets.", descriptionJp: "3ヶ月のコースを経て、イーサリアムのテストネット上で分散型NFTマーケットプレイスを構築しました。", projectTitle: "NFT Marketplace", tech: ["Solidity", "Hardhat", "React", "Ethers.js"], image: "Digital art marketplace for NFTs with various creators" },
     { title: "AI Development", titleJp: "AI開発", icon: <BrainCircuit className="w-10 h-10 text-teal-500" />, description: "Following a 3-month AI course, I developed an image recognition model that can classify Japanese landmarks with high accuracy.", descriptionJp: "3ヶ月のAIコースに続き、日本のランドマークを高精度で分類できる画像認識モデルを開発しました。", projectTitle: "Landmark Recognition", tech: ["Python", "TensorFlow", "Keras", "Flask"], image: "Artificial intelligence recognizing landmarks on a map of Japan" }
   ];
@@ -155,7 +178,7 @@ const AboutSection = () => {
       </Modal>
 
       <Modal isOpen={activeModal === 'frontiers'} onClose={() => setActiveModal(null)} title="Exploring New Frontiers / 新たな分野への挑戦">
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
           {emergingTechProjects.map((project) => (
             <Card key={project.projectTitle} className="card-hover group flex flex-col" onClick={() => handleProjectClick(project.projectTitle)}>
               <div className="relative overflow-hidden rounded-t-lg">
