@@ -1,7 +1,6 @@
-
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Plane, Heart, Code, Globe, PenTool, BrainCircuit, BookOpen, Box as Cube, Github, ExternalLink, Laptop, TerminalSquare, Trophy, Star, Target } from 'lucide-react';
+import { Plane, Heart, Code, Globe, PenTool, BrainCircuit, BookOpen, Box as Cube, Github, ExternalLink, Laptop, TerminalSquare, Trophy, Star, Target, Puzzle, BarChart, ShieldCheck, Bot } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from '@/components/ui/carousel';
 import { Button } from '@/components/ui/button';
 import Modal from '@/components/ui/modal';
@@ -27,10 +26,14 @@ const AboutSection = () => {
   ];
 
   const platforms = [
-    { name: 'TryHackMe', icon: <TerminalSquare className="w-8 h-8 text-red-500" />, score: 'Top 5%', description: 'Cybersecurity training', descriptionJp: 'サイバーセキュリティ' },
-    { name: 'Frontend Mentor', icon: <Laptop className="w-8 h-8 text-blue-500" />, score: '15,000+ XP', description: 'Real-world UI challenges', descriptionJp: 'UIチャレンジ' },
-    { name: 'Codewars', icon: <Trophy className="w-8 h-8 text-yellow-500" />, score: '4 kyu', description: 'Coding katas', descriptionJp: 'コーディング課題' },
-    { name: 'LeetCode', icon: <Star className="w-8 h-8 text-orange-500" />, score: '200+ Solved', description: 'Algorithm practice', descriptionJp: 'アルゴリズム練習' }
+    { name: 'TryHackMe', icon: <TerminalSquare className="w-6 h-6 text-red-500" />, description: 'Cybersecurity training' },
+    { name: 'Frontend Mentor', icon: <Laptop className="w-6 h-6 text-blue-500" />, description: 'Real-world UI challenges' },
+    { name: 'Codewars', icon: <Trophy className="w-6 h-6 text-yellow-500" />, description: 'Coding katas' },
+    { name: 'LeetCode', icon: <Star className="w-6 h-6 text-orange-500" />, description: 'Algorithm practice' },
+    { name: 'HackerRank', icon: <Puzzle className="w-6 h-6 text-green-500" />, description: 'Problem solving' },
+    { name: 'Kaggle', icon: <BarChart className="w-6 h-6 text-sky-500" />, description: 'Data Science competitions' },
+    { name: 'Secure Code Warrior', icon: <ShieldCheck className="w-6 h-6 text-indigo-500" />, description: 'Secure coding skills' },
+    { name: 'Hugging Face', icon: <Bot className="w-6 h-6 text-yellow-400" />, description: 'AI & ML models' },
   ];
 
   const emergingTechProjects = [
@@ -72,9 +75,18 @@ const AboutSection = () => {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-6">My Journey to Japan / 日本への道のり</h3>
-                <div className="space-y-4 text-gray-600">
+                <div className="space-y-4 text-gray-600 mb-8">
                   <p>My fascination with Japan began during my first visit to Tokyo in 2019. The perfect blend of traditional culture and cutting-edge technology captured my imagination and sparked a desire to be part of this incredible ecosystem.</p>
                   <p className="text-gray-500 text-sm">2019年の初回東京訪問で日本への魅力が始まりました。伝統文化と最先端技術の完璧な融合が私の想像力を掻き立て、この素晴らしいエコシステムの一部になりたいという願望を呼び起こしました。</p>
+                </div>
+                 <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg">
+                  <div className="flex items-start">
+                    <Target className="h-6 w-6 text-blue-600 mr-3 mt-1 flex-shrink-0" />
+                    <div>
+                      <h4 className="font-semibold text-gray-800">My Professional Goal in Japan</h4>
+                      <p className="text-gray-600 text-sm">My primary objective is to secure a full-stack developer position where I can contribute to challenging projects, grow with a team, and immerse myself in Japan's unique work environment to build a long-term career.</p>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="relative">
@@ -87,7 +99,7 @@ const AboutSection = () => {
             <div className="mt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-800 mb-6">Discover More / もっと詳しく</h3>
               <div className="flex flex-wrap justify-center gap-4">
-                <Button onClick={() => setActiveModal('hobbies')} className="btn-secondary"><PenTool className="mr-2 h-4 w-4" /> Hobbies & Goals</Button>
+                <Button onClick={() => setActiveModal('hobbies')} className="btn-secondary"><PenTool className="mr-2 h-4 w-4" /> Hobbies & Community</Button>
                 <Button onClick={() => setActiveModal('learning')} className="btn-secondary"><BookOpen className="mr-2 h-4 w-4" /> Learning Platforms</Button>
                 <Button onClick={() => setActiveModal('frontiers')} className="btn-secondary"><BrainCircuit className="mr-2 h-4 w-4" /> Tech Explorations</Button>
               </div>
@@ -96,14 +108,14 @@ const AboutSection = () => {
         </div>
       </section>
 
-      <Modal isOpen={activeModal === 'hobbies'} onClose={() => setActiveModal(null)} title="Hobbies & Professional Goals / 趣味と目標">
-        <div className="grid lg:grid-cols-2 gap-8 items-center">
+      <Modal isOpen={activeModal === 'hobbies'} onClose={() => setActiveModal(null)} title="Hobbies & Community / 趣味とコミュニティ">
+        <div className="grid lg:grid-cols-2 gap-8 items-center mb-8">
           <div>
             <h3 className="text-xl font-bold text-gray-800 mb-4">Japanese Calligraphy (書道)</h3>
             <p className="text-gray-600 mb-4">Beyond coding, I find joy and discipline in Japanese calligraphy (Shodō). The art of balancing simplicity and complexity with each brush stroke mirrors the elegance I strive for in software development.</p>
             <p className="text-gray-500 text-sm">コーディング以外に、書道で喜びと規律を見出しています。一筆一筆の単純さと複雑さのバランスを取る芸術は、私がソフトウェア開発で目指す優雅さを反映しています。</p>
           </div>
-          <div className="w-full max-w-md mx-auto">
+          <div className="w-full max-w-md mx-auto px-10">
             <Carousel className="w-full" opts={{ loop: true }}>
               <CarouselContent>
                 {calligraphyImages.map((image, index) => (
@@ -118,31 +130,25 @@ const AboutSection = () => {
             </Carousel>
           </div>
         </div>
-        <div className="mt-8 border-t pt-8">
-          <h3 className="text-xl font-bold text-gray-800 mb-4">Community & Goals / コミュニティと目標</h3>
-          <p className="text-gray-600 mb-4">I'm an active member of the <a href="https://community.welearn.co.jp/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-medium">WeLearn community</a>, connecting with fellow learners and sharing my passion for Japanese language and culture.</p>
-          <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg">
-            <div className="flex items-start">
-              <Target className="h-6 w-6 text-blue-600 mr-3 mt-1" />
-              <div>
-                <h4 className="font-semibold text-gray-800">My Professional Goal in Japan</h4>
-                <p className="text-gray-600 text-sm">My primary objective is to secure a full-stack developer position where I can contribute to challenging projects, grow with a team, and immerse myself in Japan's unique work environment to build a long-term career.</p>
-              </div>
-            </div>
-          </div>
+        <div className="border-t pt-8">
+          <h3 className="text-xl font-bold text-gray-800 mb-4">Community Involvement</h3>
+          <p className="text-gray-600">I'm an active member of the <a href="https://community.welearn.co.jp/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-medium">WeLearn community</a>, connecting with fellow learners and sharing my passion for Japanese language and culture.</p>
         </div>
       </Modal>
 
       <Modal isOpen={activeModal === 'learning'} onClose={() => setActiveModal(null)} title="Active Learning Platforms / 積極的な学習">
-        <p className="text-gray-600 mb-8">I am always curious and eager to learn new technologies. Here are some platforms where I sharpen my skills.</p>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <p className="text-gray-600 mb-8 text-center">I am always curious and eager to learn new technologies. Here are some platforms where I sharpen my skills.</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {platforms.map((platform) => (
-            <motion.div key={platform.name} whileHover={{ y: -5, scale: 1.05 }} className="bg-white p-4 rounded-xl border text-center cursor-pointer" onClick={() => handlePlatformClick(platform.name)}>
-              <div className="flex justify-center mb-3">{platform.icon}</div>
-              <h3 className="text-md font-semibold text-gray-800 mb-1">{platform.name}</h3>
-              <p className="text-xl font-bold gradient-text mb-2">{platform.score}</p>
-              <p className="text-xs text-gray-600">{platform.description}</p>
-              <p className="text-xs text-gray-500">{platform.descriptionJp}</p>
+            <motion.div 
+              key={platform.name} 
+              whileHover={{ y: -3, scale: 1.03 }} 
+              className="bg-gray-50 p-4 rounded-lg border text-center cursor-pointer flex flex-col items-center justify-center h-32" 
+              onClick={() => handlePlatformClick(platform.name)}
+            >
+              {platform.icon}
+              <h3 className="text-sm font-semibold text-gray-800 mt-2">{platform.name}</h3>
+              <p className="text-xs text-gray-500 mt-1">{platform.description}</p>
             </motion.div>
           ))}
         </div>

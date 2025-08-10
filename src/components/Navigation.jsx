@@ -8,7 +8,6 @@ const Navigation = ({ activeSection, setActiveSection }) => {
   const navItems = [
     { id: 'hero', label: 'Home', labelJp: 'ホーム' },
     { id: 'about', label: 'About', labelJp: 'について' },
-    { id: 'learning', label: 'Learning', labelJp: '学習' },
     { id: 'projects', label: 'Projects', labelJp: 'プロジェクト' },
     { id: 'contact', label: 'Contact', labelJp: 'お問い合わせ' }
   ];
