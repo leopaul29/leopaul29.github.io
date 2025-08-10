@@ -1,9 +1,9 @@
+
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import Navigation from '@/components/Navigation';
 import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
-import ActiveLearningSection from '@/components/ActiveLearningSection';
 import ProjectsSection from '@/components/ProjectsSection';
 import ContactSection from '@/components/ContactSection';
 import { Toaster } from '@/components/ui/toaster';
@@ -13,7 +13,7 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['hero', 'about', 'learning', 'projects', 'contact'];
+      const sections = ['hero', 'about', 'projects', 'contact'];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -55,7 +55,6 @@ function App() {
         <main>
           <HeroSection />
           <AboutSection />
-          <ActiveLearningSection />
           <ProjectsSection />
           <ContactSection />
         </main>

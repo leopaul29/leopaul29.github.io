@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -73,4 +74,25 @@ body {
 .embla__slide {
   flex: 0 0 100%;
   min-width: 0;
+}
+
+/* Modal Styles */
+.modal-backdrop {
+  @apply fixed inset-0 z-50 bg-black/60 backdrop-blur-sm;
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+.modal-backdrop.open {
+  opacity: 1;
+}
+
+.modal-content {
+  @apply fixed left-1/2 top-1/2 z-50 w-[90vw] max-w-2xl -translate-x-1/2 -translate-y-1/2 rounded-2xl bg-white p-6 shadow-2xl;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.95);
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+}
+.modal-content.open {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
 }

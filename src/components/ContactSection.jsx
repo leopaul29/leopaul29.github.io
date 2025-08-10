@@ -1,52 +1,39 @@
-import React, { useState } from 'react';
+
+import React from 'react';
 import { motion } from 'framer-motion';
-import { Send, Mail, MessageCircle, User } from 'lucide-react';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { Button } from '@/components/ui/button';
-import { useToast } from '@/components/ui/use-toast';
+import { Mail, Linkedin, Github, BookOpen } from 'lucide-react';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const ContactSection = () => {
-  const { toast } = useToast();
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-
-  const handleInputChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    
-    if (!formData.name || !formData.email || !formData.message) {
-      toast({
-        title: "Missing Information",
-        description: "Please fill in all fields before submitting.",
-        variant: "destructive",
-        duration: 3000,
-      });
-      return;
+  const contactLinks = [
+    {
+      icon: <Mail className="w-6 h-6 text-blue-600" />,
+      label: "Email",
+      value: "your.email@example.com",
+      href: "mailto:your.email@example.com"
+    },
+    {
+      icon: <Linkedin className="w-6 h-6 text-blue-600" />,
+      label: "LinkedIn",
+      value: "linkedin.com/in/your-profile",
+      href: "https://linkedin.com"
+    },
+    {
+      icon: <Github className="w-6 h-6 text-blue-600" />,
+      label: "GitHub",
+      value: "github.com/your-username",
+      href: "https://github.com"
+    },
+    {
+      icon: <BookOpen className="w-6 h-6 text-blue-600" />,
+      label: "Blog",
+      value: "your-blog-url.com",
+      href: "#"
     }
-
-    toast({
-      title: "🚧 Contact Form Integration Coming Soon!",
-      description: "This will send emails directly. Request this feature in your next prompt! 🚀",
-      duration: 4000,
-    });
-
-    // Reset form
-    setFormData({ name: '', email: '', message: '' });
-  };
+  ];
 
   return (
-    <section id="contact" className="py-20 px-4 bg-gray-50">
+    <section id="contact" className="py-20 px-4 bg-white">
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -68,142 +55,45 @@ const ContactSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="space-y-8"
-          >
-            <Card className="card-hover">
-              <CardHeader>
-                <CardTitle className="flex items-center space-x-3">
-                  <Mail className="w-6 h-6 text-blue-600" />
-                  <span>Let's Connect</span>
-                </CardTitle>
-                <CardDescription>
-                  Whether you're looking for a dedicated developer or want to discuss 
-                  the Japanese tech scene, I'm always open to meaningful conversations.
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600 mb-4">
-                  専任の開発者をお探しの場合でも、日本の技術シーンについて話し合いたい場合でも、
-                  私は常に有意義な会話を歓迎します。
-                </p>
-                <div className="space-y-3">
-                  <div className="flex items-center space-x-3 text-gray-600">
-                    <Mail size={18} className="text-blue-600" />
-                    <span>your.email@example.com</span>
-                  </div>
-                  <div className="flex items-center space-x-3 text-gray-600">
-                    <MessageCircle size={18} className="text-blue-600" />
-                    <span>Available for remote collaboration</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="bg-gradient-to-r from-blue-600 to-purple-600 p-6 rounded-xl text-white"
-            >
-              <h3 className="text-xl font-semibold mb-3">
-                Why Work Together? / なぜ一緒に働くのか？
-              </h3>
-              <ul className="space-y-2 text-blue-100">
-                <li>• Passionate about Japanese work culture and values</li>
-                <li>• Strong technical skills in modern web technologies</li>
-                <li>• International perspective with local appreciation</li>
-                <li>• Committed to continuous learning and improvement</li>
-              </ul>
-            </motion.div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <Card className="card-hover">
-              <CardHeader>
-                <CardTitle className="flex items-center space-x-3">
-                  <Send className="w-6 h-6 text-blue-600" />
-                  <span>Send a Message</span>
-                </CardTitle>
-                <CardDescription>
-                  Drop me a line and let's start a conversation about opportunities in Japan.
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="space-y-2">
-                    <label htmlFor="name" className="text-sm font-medium text-gray-700 flex items-center space-x-2">
-                      <User size={16} />
-                      <span>Name / お名前</span>
-                    </label>
-                    <Input
-                      id="name"
-                      name="name"
-                      type="text"
-                      placeholder="Your name"
-                      value={formData.name}
-                      onChange={handleInputChange}
-                      className="input-field"
-                    />
-                  </div>
-
-                  <div className="space-y-2">
-                    <label htmlFor="email" className="text-sm font-medium text-gray-700 flex items-center space-x-2">
-                      <Mail size={16} />
-                      <span>Email / メールアドレス</span>
-                    </label>
-                    <Input
-                      id="email"
-                      name="email"
-                      type="email"
-                      placeholder="your.email@example.com"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      className="input-field"
-                    />
-                  </div>
-
-                  <div className="space-y-2">
-                    <label htmlFor="message" className="text-sm font-medium text-gray-700 flex items-center space-x-2">
-                      <MessageCircle size={16} />
-                      <span>Message / メッセージ</span>
-                    </label>
-                    <Textarea
-                      id="message"
-                      name="message"
-                      placeholder="Tell me about the opportunity or project you have in mind..."
-                      rows={6}
-                      value={formData.message}
-                      onChange={handleInputChange}
-                      className="textarea-field"
-                    />
-                  </div>
-
-                  <motion.div
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          viewport={{ once: true }}
+        >
+          <Card className="shadow-xl border-t-4 border-blue-600">
+            <CardHeader>
+              <CardTitle className="text-center text-2xl text-gray-800">
+                Let's Connect / 繋がりましょう
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-center text-gray-600 mb-8 max-w-2xl mx-auto">
+                Whether you're looking for a dedicated developer or want to discuss the Japanese tech scene, I'm always open to meaningful conversations. Feel free to reach out through any of these platforms.
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-lg mx-auto">
+                {contactLinks.map((link, index) => (
+                  <motion.a
+                    key={index}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center p-4 bg-gray-50 rounded-lg card-hover border"
+                    whileHover={{ scale: 1.03 }}
                   >
-                    <Button
-                      type="submit"
-                      className="w-full btn-primary group"
-                    >
-                      Send Message
-                      <Send className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                    </Button>
-                  </motion.div>
-                </form>
-              </CardContent>
-            </Card>
-          </motion.div>
-        </div>
+                    <div className="mr-4">
+                      {link.icon}
+                    </div>
+                    <div>
+                      <p className="font-semibold text-gray-800">{link.label}</p>
+                      <p className="text-sm text-gray-600 truncate">{link.value}</p>
+                    </div>
+                  </motion.a>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+        </motion.div>
       </div>
     </section>
   );
