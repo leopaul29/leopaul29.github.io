@@ -4,19 +4,19 @@ import { Github, ExternalLink, Star, GitFork } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/components/ui/use-toast';
-import {projects} from "@/content/projects.js";
+import {projects} from "@/content/projects.jsx";
 import {myGithub} from "@/content/contactLinks.jsx";
 
 const ProjectsSection = () => {
   const { toast } = useToast();
 
-  const handleProjectClick = (projectTitle) => {
-    toast({
-      title: "🚧 GitHub Integration Coming Soon!",
-      description: "This will connect to your actual GitHub repositories. Request this feature in your next prompt! 🚀",
-      duration: 4000,
-    });
-  };
+  // const handleProjectClick = (projectTitle) => {
+  //   toast({
+  //     title: "🚧 GitHub Integration Coming Soon!",
+  //     description: "This will connect to your actual GitHub repositories. Request this feature in your next prompt! 🚀",
+  //     duration: 4000,
+  //   });
+  // };
 
   return (
     <section id="projects" className="py-20 px-4">
@@ -49,90 +49,56 @@ const ProjectsSection = () => {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <Card className="h-full card-hover group cursor-pointer" onClick={() => handleProjectClick(project.title)}>
+              <Card
+                  className="h-full card-hover group"
+                  // cursor-pointer"
+                  // onClick={() => handleProjectClick(project.title)}
+              >
+                {/* Image agrandie */}
                 <div className="relative overflow-hidden rounded-t-lg">
-                  <img  
-                    alt={project.image}
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                   src="https://images.unsplash.com/photo-1595872018818-97555653a011" />
+                  <img
+                      alt={project.image}
+                      className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300"
+                      src={project.imageUrl}
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
+                  {/* Overlay avec lien GitHub */}
                   <div className="absolute top-4 right-4 flex space-x-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <motion.div
-                      whileHover={{ scale: 1.1 }}
-                      className="bg-white/90 p-2 rounded-full"
+                    <motion.a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        whileHover={{ scale: 1.1 }}
+                        className="bg-white/90 p-2 rounded-full"
+                        onClick={(e) => e.stopPropagation()} // évite de déclencher le clic global
                     >
                       <Github size={16} className="text-gray-700" />
-                    </motion.div>
-                    <motion.div
-                      whileHover={{ scale: 1.1 }}
-                      className="bg-white/90 p-2 rounded-full"
-                    >
-                      <ExternalLink size={16} className="text-gray-700" />
-                    </motion.div>
+                    </motion.a>
                   </div>
                 </div>
-                
+
+                {/* Titre + Description */}
                 <CardHeader>
-                  <div className="flex justify-between items-start">
-                    <div>
-                      <CardTitle className="text-xl mb-1">{project.title}</CardTitle>
-                      <p className="text-sm text-blue-600 font-medium">{project.titleJp}</p>
-                    </div>
-                    <div className="flex items-center space-x-3 text-sm text-gray-500">
-                      <div className="flex items-center space-x-1">
-                        <Star size={14} />
-                        <span>{project.stars}</span>
-                      </div>
-                      <div className="flex items-center space-x-1">
-                        <GitFork size={14} />
-                        <span>{project.forks}</span>
-                      </div>
-                    </div>
-                  </div>
+                  <CardTitle className="text-xl mb-1">{project.title}</CardTitle>
+                  <p className="text-sm text-blue-600 font-medium">{project.titleJp}</p>
                   <CardDescription className="text-gray-600">
                     {project.description}
                   </CardDescription>
-                  <p className="text-sm text-gray-500">
-                    {project.descriptionJp}
-                  </p>
+                  <p className="text-sm text-gray-500">{project.descriptionJp}</p>
                 </CardHeader>
-                
+
+                {/* Technologies */}
                 <CardContent>
-                  <div className="flex flex-wrap gap-2 mb-4">
+                  <div className="flex flex-wrap gap-2">
                     {project.tech.map((tech, techIndex) => (
-                      <span
-                        key={techIndex}
-                        className="px-2 py-1 bg-gray-100 text-gray-700 rounded text-xs font-medium"
-                      >
-                        {tech}
-                      </span>
+                        <span
+                            key={techIndex}
+                            className="px-2 py-1 bg-gray-100 text-gray-700 rounded text-xs font-medium"
+                        >
+          {tech}
+        </span>
                     ))}
-                  </div>
-                  
-                  <div className="flex space-x-3">
-                    <Button
-                      variant="outline"
-                      size="sm"
-                      className="flex-1"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        handleProjectClick(project.title);
-                      }}
-                    >
-                      <Github className="w-4 h-4 mr-2" />
-                      Code
-                    </Button>
-                    <Button
-                      size="sm"
-                      className="flex-1"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        handleProjectClick(project.title);
-                      }}
-                    >
-                      <ExternalLink className="w-4 h-4 mr-2" />
-                      Demo
-                    </Button>
                   </div>
                 </CardContent>
               </Card>
