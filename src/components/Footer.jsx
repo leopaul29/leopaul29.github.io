@@ -1,6 +1,7 @@
 import { Github, Linkedin, BookOpen, Mail } from 'lucide-react';
 import logo from "/logo.svg";
 import React from "react";
+import {myGithub, myLinkedIn} from "@/content/contactLinks.jsx";
 
 const Footer = () => {
     return (<footer className="bg-gray-900 text-white pt-16 pb-8 px-4">
@@ -27,10 +28,10 @@ const Footer = () => {
             <div>
                 <h4 className="font-semibold text-lg text-white mb-4">Connect</h4>
                 <div className="flex justify-center md:justify-start space-x-4">
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors"><Github size={22} /></a>
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors"><Linkedin size={22} /></a>
-                    <a href="#" className="text-gray-400 hover:text-white transition-colors"><BookOpen size={22} /></a>
-                    <a href="mailto:your.email@example.com" className="text-gray-400 hover:text-white transition-colors"><Mail size={22} /></a>
+                    <a href={myGithub} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors"><Github size={22} /></a>
+                    <a href={myLinkedIn} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors"><Linkedin size={22} /></a>
+                    {/*<a href="#" className="text-gray-400 hover:text-white transition-colors"><BookOpen size={22} /></a>*/}
+                    {/*<a href="mailto:your.email@example.com" className="text-gray-400 hover:text-white transition-colors"><Mail size={22} /></a>*/}
                 </div>
             </div>
         </div>

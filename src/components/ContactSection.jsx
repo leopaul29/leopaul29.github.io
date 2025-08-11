@@ -1,37 +1,9 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Linkedin, Github, BookOpen } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import {contactLinks} from "@/content/contactLinks.jsx";
 
 const ContactSection = () => {
-  const contactLinks = [
-    {
-      icon: <Mail className="w-6 h-6 text-blue-600" />,
-      label: "Email",
-      value: "your.email@example.com",
-      href: "mailto:your.email@example.com"
-    },
-    {
-      icon: <Linkedin className="w-6 h-6 text-blue-600" />,
-      label: "LinkedIn",
-      value: "linkedin.com/in/your-profile",
-      href: "https://linkedin.com"
-    },
-    {
-      icon: <Github className="w-6 h-6 text-blue-600" />,
-      label: "GitHub",
-      value: "github.com/your-username",
-      href: "https://github.com"
-    },
-    {
-      icon: <BookOpen className="w-6 h-6 text-blue-600" />,
-      label: "Blog",
-      value: "your-blog-url.com",
-      href: "#"
-    }
-  ];
-
   return (
     <section id="contact" className="py-20 px-4 bg-white">
       <div className="max-w-4xl mx-auto">

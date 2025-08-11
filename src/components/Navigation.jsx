@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Menu, X, Github, Linkedin, BookOpen } from 'lucide-react';
+import {myGithub, myLinkedIn} from "@/content/contactLinks.jsx";
 
 const Navigation = ({ activeSection, setActiveSection }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -79,7 +80,7 @@ const Navigation = ({ activeSection, setActiveSection }) => {
             <div className="flex items-center space-x-4 ml-6 pl-6 border-l border-gray-300">
               <motion.a
                 whileHover={{ scale: 1.1 }}
-                href="https://github.com"
+                href={myGithub}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:text-gray-900"
@@ -88,20 +89,20 @@ const Navigation = ({ activeSection, setActiveSection }) => {
               </motion.a>
               <motion.a
                 whileHover={{ scale: 1.1 }}
-                href="https://linkedin.com"
+                href={myLinkedIn}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:text-gray-900"
               >
                 <Linkedin size={20} />
               </motion.a>
-              <motion.a
-                whileHover={{ scale: 1.1 }}
-                href="#"
-                className="text-gray-600 hover:text-gray-900"
-              >
-                <BookOpen size={20} />
-              </motion.a>
+              {/*<motion.a*/}
+              {/*  whileHover={{ scale: 1.1 }}*/}
+              {/*  href="#"*/}
+              {/*  className="text-gray-600 hover:text-gray-900"*/}
+              {/*>*/}
+              {/*  <BookOpen size={20} />*/}
+              {/*</motion.a>*/}
             </div>
           </div>
 

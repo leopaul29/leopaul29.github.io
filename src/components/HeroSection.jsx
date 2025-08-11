@@ -5,6 +5,7 @@ import {Button} from '@/components/ui/button';
 import * as Tooltip from '@radix-ui/react-tooltip';
 import {PremiumTooltip} from "@/components/ui/tooltip.jsx";
 import avatarImage from '/images/avatar-developer-transparent.png';
+import {myLinkedIn} from "@/content/contactLinks.jsx";
 
 
 const skills = [
@@ -90,7 +91,7 @@ const HeroSection = () => {
             >
               <Button
                   className="btn-primary group"
-                  onClick={() => window.open('https://linkedin.com', '_blank')}
+                  onClick={() => window.open(myLinkedIn, '_blank')}
               >
                 Connect on LinkedIn
                 <Linkedin className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
