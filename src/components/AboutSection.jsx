@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { PenTool, BrainCircuit, BookOpen, Github, ExternalLink } from 'lucide-react';
-import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from '@/components/ui/carousel';
 import { Button } from '@/components/ui/button';
 import Modal from '@/components/ui/modal';
 import { useToast } from '@/components/ui/use-toast';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import {calligraphyImages, emergingTechProjects, experiences, platforms} from "@/content/about.jsx";
+import {emergingTechProjects, experiences, platforms} from "@/content/about.jsx";
 import ShodaKohoUkiyo from "/images/shoda-koho-pine-tree-fireworks.jpg";
+import CalligraphyImage from "/images/calligraphie-leo.jpg";
 
 const AboutSection = () => {
   const [activeModal, setActiveModal] = useState(null);
@@ -94,23 +94,12 @@ const AboutSection = () => {
             <p className="text-gray-500 text-sm">コーディング以外に、書道で喜びと規律を見出しています。一筆一筆の単純さと複雑さのバランスを取る芸術は、私がソフトウェア開発で目指す優雅さを反映しています。</p>
           </div>
           <div className="w-full max-w-md mx-auto px-10">
-            <Carousel className="w-full" opts={{ loop: true }}>
-              <CarouselContent>
-                {calligraphyImages.map((image, index) => (
-                  <CarouselItem key={index} className="relative">
-                    <img src={image.src} alt={image.alt} className="w-full h-64 object-contain rounded-lg bg-gray-100" />
-                    <div className="absolute bottom-2 left-1/2 -translate-x-1/2 bg-black/50 text-white px-3 py-1 rounded-full text-sm font-medium">{image.meaning}</div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
-            </Carousel>
+            <img src={CalligraphyImage} alt="calligraphy Leo" className="w-full h-64 object-contain rounded-lg bg-gray-100" />
           </div>
         </div>
         <div className="border-t pt-8">
           <h3 className="text-xl font-bold text-gray-800 mb-4">Community Involvement</h3>
-          <p className="text-gray-600">I'm an active member of the <a href="https://community.welearn.co.jp/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-medium">WeLearn community</a>, connecting with fellow learners and sharing my passion for Japanese language and culture.</p>
+          <p className="text-gray-600">I'm an active member of the 🦊 <a href="https://community.welearn.co.jp/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-medium">WeLearn community</a>, connecting with fellow learners and sharing my passion for Japanese language and culture.</p>
         </div>
       </Modal>
 
