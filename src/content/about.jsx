@@ -12,6 +12,9 @@ import {
     Trophy
 } from "lucide-react";
 import React from "react";
+import RobotBattleImg from "/images/robotbattle.png"
+import JardiBotImg from "/images/jardibot.jpg"
+import BlockchainImg from "/images/blockchain.jpg";
 
 export const experiences = [
     { icon: <Plane className="w-6 h-6" />, title: "Japan Explorer", titleJp: "日本探検家", description: "Traveled extensively across Japan, from bustling Tokyo to serene Kyoto temples.", descriptionJp: "東京の賑やかな街から京都の静寂な寺院まで、日本全国を広く旅行しました。" },
@@ -40,7 +43,8 @@ export const platforms = [
 ];
 
 export const emergingTechProjects = [
-    { title: "RobotBattle",
+    {
+        title: "RobotBattle",
         titleJp: "ロボットバトル",
         icon: <Gamepad2 className="w-10 h-10 text-yellow-400" />,
         description: "Created during the 2020 Global Game Jam in Okinawa, RobotBattle is a 2D strategy game where players control robots that can attack and repair themselves, balancing offense and defense under a limited energy system.",
@@ -48,7 +52,7 @@ export const emergingTechProjects = [
         projectTitle: "RobotBattle",
         tech: ["Unity", "C#"],
         imageAlt: "2D strategy game featuring robot battles with attack and repair mechanics",
-        imageUrl: "https://ggj.s3.amazonaws.com/styles/game_sidebar__wide/featured_image/2020/02/258421/shot.png?itok=9QoMBiAc&timestamp=1580627358",
+        imageUrl: RobotBattleImg,
         githubUrl:"https://github.com/leopaul29/RobotBattle",
         detailUrl:"https://v3.globalgamejam.org/2020/games/robotbattle-1"
     },
@@ -62,7 +66,7 @@ export const emergingTechProjects = [
         tech: ["Solidity", "Hardhat", "React", "Ethers.js"],
         imageAlt: "Blockchain eco-project funding platform",
         githubUrl: "https://github.com/leopaul29/Alyra-Coup-de-pousse",
-        imageUrl: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        imageUrl: BlockchainImg,
         detailUrl: "https://www.loom.com/share/c29c2e0411a740faa0dca0351573aefc?sid=972d58c4-4925-4b24-91b5-ee8e56cfb614"
     },
     {
@@ -75,6 +79,6 @@ export const emergingTechProjects = [
         tech: ["Python", "TensorFlow", "Keras", "OpenCV"],
         imageAlt: "AI assistant for smart gardening",
         githubUrl: "https://github.com/leopaul29/Alyra-Jardibot",
-        imageUrl: "https://images.unsplash.com/photo-1640367169401-534dec442631?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        imageUrl: JardiBotImg
     }
 ];

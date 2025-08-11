@@ -7,6 +7,7 @@ import Modal from '@/components/ui/modal';
 import { useToast } from '@/components/ui/use-toast';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import {calligraphyImages, emergingTechProjects, experiences, platforms} from "@/content/about.jsx";
+import ShodaKohoUkiyo from "/images/shoda-koho-pine-tree-fireworks.jpg";
 
 const AboutSection = () => {
   const [activeModal, setActiveModal] = useState(null);
@@ -77,7 +78,7 @@ const AboutSection = () => {
               <div className="relative">
                 <motion.div whileHover={{ scale: 1.05 }} className="relative">
                   <img className="w-64 m-auto"
-                      src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2F474x%2F32%2F3b%2Fee%2F323bee20461c3e40a733d3d1f4031ca1--pine-tree-fireworks.jpg&f=1&nofb=1&ipt=26c2c581a4a617b396b06d659ee41d1320d78a1a68db9db2908d0b9656441a3a"/>
+                      src={ShodaKohoUkiyo} />
                 </motion.div>
               </div>
             </div>
