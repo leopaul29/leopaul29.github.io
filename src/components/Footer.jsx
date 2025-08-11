@@ -7,10 +7,9 @@ const Footer = () => {
     return (<footer className="bg-gray-900 text-white pt-16 pb-8 px-4">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
             <div>
-                {/*<h3 className="font-bold text-xl gradient-text mb-4">Portfolio</h3>*/}
                 <img
                     alt="logo"
-                    className=" h-40  object-cover shadow-2xl "
+                    className=" h-40  object-cover shadow-2xl mb-4"
                     src={logo}
                 />
                 <p className="text-gray-400 text-sm">Passionate web developer seeking opportunities in Japan. Let's build something amazing together.</p>
