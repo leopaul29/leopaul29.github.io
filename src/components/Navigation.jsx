@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Menu, X, Github, Linkedin, BookOpen } from 'lucide-react';
 import {myGithub, myLinkedIn} from "@/content/contactLinks.jsx";
+import titleImg from "/images/title.svg"
 
 const Navigation = ({ activeSection, setActiveSection }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -56,7 +57,7 @@ const Navigation = ({ activeSection, setActiveSection }) => {
             className="font-bold text-xl gradient-text cursor-pointer"
             onClick={() => scrollToSection('hero')}
           >
-            Portfolio
+            <img src={titleImg} alt="Portfolio Leo" className="w-full h-8"/>
           </motion.div>
 
           {/* Desktop Navigation */}
