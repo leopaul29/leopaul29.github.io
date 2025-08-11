@@ -13,14 +13,6 @@ const AboutSection = () => {
   const [activeModal, setActiveModal] = useState(null);
   const { toast } = useToast();
 
-  const handlePlatformClick = (platformName) => {
-    toast({ title: `Navigating to ${platformName}...`, description: "🚧 This link is a placeholder. You can request to add your actual profile links next! 🚀", duration: 4000 });
-  };
-  
-  const handleProjectClick = (projectTitle) => {
-    toast({ title: "🚧 GitHub Integration Coming Soon!", description: `This will link to the ${projectTitle} repository. Request this feature in your next prompt! 🚀`, duration: 4000 });
-  };
-
   return (
     <>
       <section id="about" className="py-20 px-4 bg-gray-50">
@@ -124,13 +116,13 @@ const AboutSection = () => {
 
       <Modal isOpen={activeModal === 'learning'} onClose={() => setActiveModal(null)} title="Active Learning Platforms / 積極的な学習">
         <p className="text-gray-600 mb-8 text-center">I am always curious and eager to learn new technologies. Here are some platforms where I sharpen my skills.</p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
           {platforms.map((platform) => (
             <motion.div 
               key={platform.name} 
               whileHover={{ y: -3, scale: 1.03 }} 
               className="bg-gray-50 p-4 rounded-lg border text-center cursor-pointer flex flex-col items-center justify-center h-32" 
-              onClick={() => handlePlatformClick(platform.name)}
+              onClick={() => window.open(platform.url, '_blank')}
             >
               {platform.icon}
               <h3 className="text-sm font-semibold text-gray-800 mt-2">{platform.name}</h3>

@@ -31,14 +31,15 @@ export const calligraphyImages = [
 ];
 
 export const platforms = [
-    { name: 'TryHackMe', icon: <TerminalSquare className="w-6 h-6 text-red-500" />, description: 'Cybersecurity training' },
-    { name: 'Frontend Mentor', icon: <Laptop className="w-6 h-6 text-blue-500" />, description: 'Real-world UI challenges' },
-    { name: 'Codewars', icon: <Trophy className="w-6 h-6 text-yellow-500" />, description: 'Coding katas' },
-    { name: 'LeetCode', icon: <Star className="w-6 h-6 text-orange-500" />, description: 'Algorithm practice' },
-    { name: 'HackerRank', icon: <Puzzle className="w-6 h-6 text-green-500" />, description: 'Problem solving' },
-    { name: 'Kaggle', icon: <BarChart className="w-6 h-6 text-sky-500" />, description: 'Data Science competitions' },
-    { name: 'Secure Code Warrior', icon: <ShieldCheck className="w-6 h-6 text-indigo-500" />, description: 'Secure coding skills' },
-    { name: 'Hugging Face', icon: <Bot className="w-6 h-6 text-yellow-400" />, description: 'AI & ML models' },
+    { name: 'TryHackMe', icon: <TerminalSquare className="w-6 h-6 text-red-500" />, description: 'Cybersecurity training', url: 'https://tryhackme.com/p/K33f1mof0B' },
+    { name: 'Frontend Mentor', icon: <Laptop className="w-6 h-6 text-blue-500" />, description: 'Real-world UI challenges', url: 'https://www.frontendmentor.io/profile/leopaul29'},
+    // { name: 'Codewars', icon: <Trophy className="w-6 h-6 text-yellow-500" />, description: 'Coding katas' },
+    { name: 'Pluralsight', icon: <Trophy className="w-6 h-6 text-yellow-500" />, description: 'Knowledge skills', url: 'https://app.pluralsight.com/profile/lpmartin' },
+    { name: 'LeetCode', icon: <Star className="w-6 h-6 text-orange-500" />, description: 'Algorithm practice', url: 'https://leetcode.com/u/user9456pv/' },
+    // { name: 'HackerRank', icon: <Puzzle className="w-6 h-6 text-green-500" />, description: 'Problem solving' },
+    { name: 'Kaggle', icon: <BarChart className="w-6 h-6 text-sky-500" />, description: 'Data Science competitions', url: 'https://www.kaggle.com/leopaul29' },
+    // { name: 'Secure Code Warrior', icon: <ShieldCheck className="w-6 h-6 text-indigo-500" />, description: 'Secure coding skills' },
+    { name: 'Global Game Jam', icon: <Bot className="w-6 h-6 text-yellow-400" />, description: 'Gaming contest', url: 'https://v3.globalgamejam.org/users/yrladd' },
     // global game jam profile
 ];
 
