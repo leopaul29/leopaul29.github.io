@@ -12,8 +12,8 @@ const Footer = () => {
                     className=" h-40  object-cover shadow-2xl mb-4"
                     src={logo}
                 />
-                <p className="text-gray-400 text-sm">Passionate web developer seeking opportunities in Japan. Let's build something amazing together.</p>
-                <p className="text-gray-500 text-xs mt-2">日本での機会を探している情熱的なウェブ開発者。</p>
+                <p className="text-gray-300 text-sm">Passionate web developer seeking opportunities in Japan. Let's build something amazing together.</p>
+                <p className="text-gray-400 text-xs mt-2">日本での機会を探している情熱的なウェブ開発者。</p>
             </div>
             <div>
                 <h4 className="font-semibold text-lg text-white mb-4">Quick Links</h4>
@@ -35,8 +35,8 @@ const Footer = () => {
             </div>
         </div>
         <div className="max-w-6xl mx-auto mt-12 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
-            <p>© {new Date().getFullYear()} Web Developer Portfolio. Built with passion for Japan.</p>
-            <p className="mt-1">日本への情熱を込めて作られました。</p>
+            <p className="text-gray-300">© {new Date().getFullYear()} Web Developer Portfolio. Built with passion for Japan.</p>
+            <p className="text-gray-400 mt-1">日本への情熱を込めて作られました。</p>
         </div>
     </footer>)
 }
