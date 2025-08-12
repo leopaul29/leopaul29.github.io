@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import { PenTool, BrainCircuit, BookOpen, Github, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Modal from '@/components/ui/modal';
-import { useToast } from '@/components/ui/use-toast';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import {emergingTechProjects, experiences, platforms} from "@/content/about.jsx";
 import shodaKohoUkiyo from "/images/shoda-koho-pine-tree-fireworks.jpg";
@@ -11,7 +10,6 @@ import calligraphyImage from "/images/calligraphie-leo.jpg";
 
 const AboutSection = () => {
   const [activeModal, setActiveModal] = useState(null);
-  const { toast } = useToast();
 
   return (
     <>
