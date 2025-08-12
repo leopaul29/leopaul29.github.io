@@ -47,7 +47,7 @@ function App() {
         <meta property="og:title" content="Web Developer Portfolio - Seeking Opportunities in Japan" />
         <meta property="og:description" content="Passionate full-stack developer with expertise in React, Angular, and Spring Boot, seeking opportunities in Japan's tech industry." />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="/" />
+        <link rel="canonical" href="https://leopaul29.github.io/" />
       </Helmet>
       
       <div className="min-h-screen bg-white">

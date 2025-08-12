@@ -6,8 +6,8 @@ import Modal from '@/components/ui/modal';
 import { useToast } from '@/components/ui/use-toast';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import {emergingTechProjects, experiences, platforms} from "@/content/about.jsx";
-import ShodaKohoUkiyo from "/images/shoda-koho-pine-tree-fireworks.jpg";
-import CalligraphyImage from "/images/calligraphie-leo.jpg";
+import shodaKohoUkiyo from "/images/shoda-koho-pine-tree-fireworks.jpg";
+import calligraphyImage from "/images/calligraphie-leo.jpg";
 
 const AboutSection = () => {
   const [activeModal, setActiveModal] = useState(null);
@@ -69,8 +69,8 @@ const AboutSection = () => {
               </div>
               <div className="relative">
                 <motion.div whileHover={{ scale: 1.05 }} className="relative">
-                  <img className="w-64 m-auto"
-                      src={ShodaKohoUkiyo} />
+                  <img alt="Shoda Koho Ukiyo - pine tree fireworks" className="w-64 m-auto"
+                      src={shodaKohoUkiyo} />
                 </motion.div>
               </div>
             </div>
@@ -94,7 +94,7 @@ const AboutSection = () => {
             <p className="text-gray-500 text-sm">コーディング以外に、書道で喜びと規律を見出しています。一筆一筆の単純さと複雑さのバランスを取る芸術は、私がソフトウェア開発で目指す優雅さを反映しています。</p>
           </div>
           <div className="w-full max-w-md mx-auto px-10">
-            <img src={CalligraphyImage} alt="calligraphy Leo" className="w-full h-64 object-contain rounded-lg bg-gray-100" />
+            <img src={calligraphyImage} alt="calligraphy Leo" className="w-full h-64 object-contain rounded-lg bg-gray-100" />
           </div>
         </div>
         <div className="border-t pt-8">
