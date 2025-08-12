@@ -27,10 +27,10 @@ const Footer = () => {
             <div>
                 <h4 className="font-semibold text-lg text-white mb-4">Connect</h4>
                 <div className="flex justify-center md:justify-start space-x-4">
-                    <a href={myGithub} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors"><Github size={22} /></a>
-                    <a href={myLinkedIn} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors"><Linkedin size={22} /></a>
-                    {/*<a href="#" className="text-gray-400 hover:text-white transition-colors"><BookOpen size={22} /></a>*/}
-                    {/*<a href="mailto:your.email@example.com" className="text-gray-400 hover:text-white transition-colors"><Mail size={22} /></a>*/}
+                    <a href={myGithub} aria-label={myGithub} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors"><Github size={22} /></a>
+                    <a href={myLinkedIn} aria-label={myLinkedIn} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors"><Linkedin size={22} /></a>
+                    {/*<a href="#" aria-label="myblog" className="text-gray-400 hover:text-white transition-colors"><BookOpen size={22} /></a>*/}
+                    {/*<a href="mailto:your.email@example.com" aria-label="myemail" className="text-gray-400 hover:text-white transition-colors"><Mail size={22} /></a>*/}
                 </div>
             </div>
         </div>

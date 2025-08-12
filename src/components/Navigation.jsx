@@ -82,6 +82,7 @@ const Navigation = ({ activeSection, setActiveSection }) => {
               <motion.a
                 whileHover={{ scale: 1.1 }}
                 href={myGithub}
+                aria-label={myGithub}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:text-gray-900"
@@ -91,6 +92,7 @@ const Navigation = ({ activeSection, setActiveSection }) => {
               <motion.a
                 whileHover={{ scale: 1.1 }}
                 href={myLinkedIn}
+                aria-label={myLinkedIn}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:text-gray-900"
