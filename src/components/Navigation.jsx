@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Menu, X, Github, Linkedin, BookOpen } from 'lucide-react';
-import {myGithub, myLinkedIn} from "@/content/contactLinks.jsx";
+import {myBlog, myGithub, myLinkedIn} from "@/content/contactLinks.jsx";
 import titleImg from "/images/title.svg"
 
 const Navigation = ({ activeSection, setActiveSection }) => {
@@ -99,13 +99,16 @@ const Navigation = ({ activeSection, setActiveSection }) => {
               >
                 <Linkedin size={20} />
               </motion.a>
-              {/*<motion.a*/}
-              {/*  whileHover={{ scale: 1.1 }}*/}
-              {/*  href="#"*/}
-              {/*  className="text-gray-600 hover:text-gray-900"*/}
-              {/*>*/}
-              {/*  <BookOpen size={20} />*/}
-              {/*</motion.a>*/}
+              <motion.a
+                whileHover={{ scale: 1.1 }}
+                href={myBlog}
+                aria-label={myBlog}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-gray-900"
+              >
+                <BookOpen size={20} />
+              </motion.a>
             </div>
           </div>
 
@@ -147,7 +150,7 @@ const Navigation = ({ activeSection, setActiveSection }) => {
             <div className="flex items-center space-x-4 mt-4 pt-4 border-t border-gray-200">
               <motion.a
                 whileHover={{ scale: 1.1 }}
-                href="https://github.com"
+                href={myGithub}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:text-gray-900"
@@ -156,7 +159,7 @@ const Navigation = ({ activeSection, setActiveSection }) => {
               </motion.a>
               <motion.a
                 whileHover={{ scale: 1.1 }}
-                href="https://linkedin.com"
+                href={myLinkedIn}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:text-gray-900"
@@ -165,7 +168,9 @@ const Navigation = ({ activeSection, setActiveSection }) => {
               </motion.a>
               <motion.a
                 whileHover={{ scale: 1.1 }}
-                href="#"
+                href={myBlog}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-gray-600 hover:text-gray-900"
               >
                 <BookOpen size={20} />

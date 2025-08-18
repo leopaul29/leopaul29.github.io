@@ -4,6 +4,8 @@ export const myGithub = "https://github.com/leopaul29";
 
 export const myLinkedIn = "https://www.linkedin.com/in/leo-paul-martin/";
 
+export const myBlog = "https://lpm.hashnode.dev/";
+
 export const contactLinks = [
     // {
     //   icon: <Mail className="w-6 h-6 text-blue-600" />,
