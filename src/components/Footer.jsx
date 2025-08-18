@@ -1,7 +1,7 @@
 import { Github, Linkedin, BookOpen, Mail } from 'lucide-react';
 import logo from "/logo.svg";
 import React from "react";
-import {myGithub, myLinkedIn} from "@/content/contactLinks.jsx";
+import {myBlog, myGithub, myLinkedIn} from "@/content/contactLinks.jsx";
 
 const Footer = () => {
     return (<footer className="bg-gray-900 text-white pt-16 pb-8 px-4">
@@ -29,7 +29,7 @@ const Footer = () => {
                 <div className="flex justify-center md:justify-start space-x-4">
                     <a href={myGithub} aria-label={myGithub} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors"><Github size={22} /></a>
                     <a href={myLinkedIn} aria-label={myLinkedIn} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors"><Linkedin size={22} /></a>
-                    {/*<a href="#" aria-label="myblog" className="text-gray-400 hover:text-white transition-colors"><BookOpen size={22} /></a>*/}
+                    <a href={myBlog} aria-label={myBlog} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors"><BookOpen size={22} /></a>
                     {/*<a href="mailto:your.email@example.com" aria-label="myemail" className="text-gray-400 hover:text-white transition-colors"><Mail size={22} /></a>*/}
                 </div>
             </div>
