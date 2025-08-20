@@ -36,7 +36,7 @@ const ProjectsSection = () => {
             and clean, maintainable code practices.
           </p>
           <p className="text-lg text-gray-500 mt-4 max-w-3xl mx-auto">
-            モダンなウェブ技術とクリーンで保守可能なコード実践の専門知識を示す最近の作品集です。
+            モダンなWeb技術と、保守性の高いクリーンなコードを用いた最近のプロジェクトを紹介します。
           </p>
         </motion.div>
 

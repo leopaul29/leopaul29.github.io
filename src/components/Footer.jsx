@@ -13,7 +13,7 @@ const Footer = () => {
                     src={logo}
                 />
                 <p className="text-gray-300 text-sm">Passionate web developer seeking opportunities in Japan. Let's build something amazing together.</p>
-                <p className="text-gray-400 text-xs mt-2">日本での機会を探している情熱的なウェブ開発者。</p>
+                <p className="text-gray-400 text-xs mt-2">日本でのキャリアを築きたい、情熱的なウェブ開発者です。共に素晴らしいものを創り上げましょう。</p>
             </div>
             <div>
                 <h4 className="font-semibold text-lg text-white mb-4">Quick Links</h4>

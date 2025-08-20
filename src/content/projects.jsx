@@ -3,7 +3,7 @@ export const projects = [
         title: "Bento Recommender",
         titleJp: "🍱 弁当レコメンダー",
         description: "A personalized recommendation system for bento boxes using machine learning to suggest meals based on user preferences and dietary needs.",
-        descriptionJp: "ユーザーの好みや食事制限に基づいて、お弁当をおすすめする機械学習を使ったパーソナライズシステムです。",
+        descriptionJp: "ユーザーの好みや食事制限に基づき、最適な弁当を提案する機械学習を用いたパーソナライズシステムです。",
         projectTitle: "Bento Recommender",
         tech: ["java 17", "spring-boot", "docker", "maven", "postgresql"],
         image: "Machine learning-powered bento recommendation interface",

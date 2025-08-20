@@ -18,7 +18,7 @@ const AboutSection = () => {
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }} className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">About Me / <span className="gradient-text">私について</span></h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">A passionate developer with a deep love for Japan, seeking to contribute to the innovative tech landscape while embracing the Japanese work culture and values.</p>
-            <p className="text-lg text-gray-500 mt-4 max-w-3xl mx-auto">日本への深い愛情を持つ情熱的な開発者として、革新的な技術環境に貢献し、日本の仕事文化と価値観を受け入れたいと考えています。</p>
+            <p className="text-lg text-gray-500 mt-4 max-w-3xl mx-auto">日本の文化と価値観を尊重し、革新的なIT環境への貢献を目指す、情熱的な開発者です。</p>
           </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
@@ -53,15 +53,13 @@ const AboutSection = () => {
                     日本との出会いは2016年、忍者の里として知られる滋賀県甲賀市から始まりました。
                   </p>
                   <p className="text-gray-500 text-sm">
-                    2019年には1年間のワーキングホリデーで再び来日。新型コロナウイルスの影響を受けながらも、日本文化への探求は止まりませんでした。3か月間の日本語学習で書道に魅了され、岡山近郊の農場で1か月働くなど、多様な経験を積みました。
-                  </p>
+                    2019年にはワーキングホリデーで再来日しました。そこで3か月間日本語を学び、書道に魅了されたほか、岡山近郊の農場で働くなど、多岐にわたる経験を積みました。                  </p>
                   <p className="text-gray-500 text-sm">
-                    現在は、技術力と文化的経験を融合させ、日本で価値あるプロジェクトと長期的なキャリアを築くことを目指しています。
-                  </p>
+                    現在は、これまでの技術力と文化的経験を融合させ、日本で意義あるプロジェクトに取り組み、長期的なキャリアを築くことを目指しています。                  </p>
                 </div>
                 <div className="border-l-4 border-blue-400 pl-4 italic text-gray-700">
                   “From ninja villages to calligraphy studios — building tech with a cultural soul.”
-                  <span className="text-gray-500 text-sm">忍者の里から書道の工房まで——文化の心を持つ技術を創造する。</span>
+                  <span className="text-gray-500 text-sm">忍者の里から書道の工房まで――文化の精神を持つ技術を創造する。</span>
                 </div>
 
               </div>
@@ -89,7 +87,7 @@ const AboutSection = () => {
           <div>
             <h3 className="text-xl font-bold text-gray-800 mb-4">Japanese Calligraphy (書道)</h3>
             <p className="text-gray-600 mb-4">Beyond coding, I find joy and discipline in Japanese calligraphy (Shodō). The art of balancing simplicity and complexity with each brush stroke mirrors the elegance I strive for in software development.</p>
-            <p className="text-gray-500 text-sm">コーディング以外に、書道で喜びと規律を見出しています。一筆一筆の単純さと複雑さのバランスを取る芸術は、私がソフトウェア開発で目指す優雅さを反映しています。</p>
+            <p className="text-gray-500 text-sm">コーディングの傍ら、書道に喜びと規律を見出しています。筆遣いにおけるシンプルさと複雑さのバランスを取る芸術性は、私がソフトウェア開発で追求する美しさそのものです。</p>
           </div>
           <div className="w-full max-w-md mx-auto px-10">
             <img src={calligraphyImage} alt="calligraphy Leo" className="w-full h-64 object-contain rounded-lg bg-gray-100" />
@@ -103,6 +101,7 @@ const AboutSection = () => {
 
       <Modal isOpen={activeModal === 'learning'} onClose={() => setActiveModal(null)} title="Active Learning Platforms / 積極的な学習">
         <p className="text-gray-600 mb-8 text-center">I am always curious and eager to learn new technologies. Here are some platforms where I sharpen my skills.</p>
+        <p className="text-gray-500 text-sm mb-8 text-center">私は常に好奇心と探究心を持って、新しい技術を学ぶことに意欲的です。</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
           {platforms.map((platform) => (
             <motion.div 

@@ -15,10 +15,10 @@ import JardiBotImg from "/images/jardibot.jpg"
 import BlockchainImg from "/images/blockchain.jpg";
 
 export const experiences = [
-    { icon: <Plane className="w-6 h-6" />, title: "Japan Explorer", titleJp: "日本探検家", description: "Traveled extensively across Japan, from bustling Tokyo to serene Kyoto temples.", descriptionJp: "東京の賑やかな街から京都の静寂な寺院まで、日本全国を広く旅行しました。" },
-    { icon: <Heart className="w-6 h-6" />, title: "Cultural Enthusiast", titleJp: "文化愛好家", description: "Deep appreciation for Japanese culture, traditions, and way of life.", descriptionJp: "日本の文化、伝統、生き方に深い敬意を持っています。" },
-    { icon: <Code className="w-6 h-6" />, title: "Tech Passionate", titleJp: "技術愛好家", description: "Fascinated by Japan's innovation in technology and software development.", descriptionJp: "日本の技術革新とソフトウェア開発に魅力を感じています。" },
-    { icon: <Globe className="w-6 h-6" />, title: "Global Mindset", titleJp: "グローバル思考", description: "Bringing international perspective to Japanese tech industry.", descriptionJp: "日本の技術業界に国際的な視点をもたらします。" }
+    { icon: <Plane className="w-6 h-6" />, title: "Japan Explorer", titleJp: "日本探求者", description: "Traveled extensively across Japan, from bustling Tokyo to serene Kyoto temples.", descriptionJp: "賑やかな東京から静寂な古都・京都まで、日本各地を幅広く巡りました。" },
+    { icon: <Heart className="w-6 h-6" />, title: "Cultural Enthusiast", titleJp: "文化愛好家", description: "Deep appreciation for Japanese culture, traditions, and way of life.", descriptionJp: "日本の文化、伝統、そして生活様式を深く尊重しています。" },
+    { icon: <Code className="w-6 h-6" />, title: "Tech Passionate", titleJp: "技術愛好家", description: "Fascinated by Japan's innovation in technology and software development.", descriptionJp: "日本の技術革新やソフトウェア開発に強い関心を持っています。" },
+    { icon: <Globe className="w-6 h-6" />, title: "Global Mindset", titleJp: "グローバルな視点", description: "Bringing international perspective to Japanese tech industry.", descriptionJp: "日本のIT業界に国際的な視点と経験をもたらします。" }
 ];
 
 export const platforms = [
@@ -40,7 +40,7 @@ export const emergingTechProjects = [
         titleJp: "ロボットバトル",
         icon: <Gamepad2 className="w-10 h-10 text-yellow-400" />,
         description: "Created during the 2020 Global Game Jam in Okinawa, RobotBattle is a 2D strategy game where players control robots that can attack and repair themselves, balancing offense and defense under a limited energy system.",
-        descriptionJp: "2020年の沖縄グローバルゲームジャムで制作したロボットバトルは、攻撃と修理を駆使し、限られたエネルギーで戦う2D戦略ゲームです。",
+        descriptionJp: "2020年の沖縄グローバルゲームジャムで制作。攻撃と修理を駆使し、限られたエネルギーで攻守のバランスを取る2D戦略ゲームです。",
         projectTitle: "RobotBattle",
         tech: ["Unity", "C#"],
         imageAlt: "2D strategy game featuring robot battles with attack and repair mechanics",
@@ -53,7 +53,7 @@ export const emergingTechProjects = [
         titleJp: "ブロックチェーン開発",
         icon: <Cube className="w-10 h-10 text-purple-500" />,
         description: "After a 3-month course, I built a Blockchain-based platform to support eco-projects through transparent funding, secure smart contracts, and community-driven sustainable development.",
-        descriptionJp: "3ヶ月のコースを経て、ブロックチェーン技術を活用し、透明な資金調達と安全なスマートコントラクトで持続可能な環境プロジェクトを支援するプラットフォーム。",
+        descriptionJp: "3ヶ月間のコース受講後、ブロックチェーン技術を活用し、透明性の高い資金調達と安全なスマートコントラクトによって、持続可能な環境プロジェクトを支援するプラットフォームを開発しました。",
         projectTitle: "Alyra Coup de Pousse",
         tech: ["Solidity", "Hardhat", "React", "Ethers.js"],
         imageAlt: "Blockchain eco-project funding platform",
@@ -66,7 +66,7 @@ export const emergingTechProjects = [
         titleJp: "AI開発",
         icon: <Brain className="w-10 h-10 text-green-500"/>,
         description: "After a 3-month course, I created an AI-powered gardening assistant using machine and deep learning to recognize plants, predict needs, and optimize care automatically.",
-        descriptionJp: "3ヶ月のコースを経て、機械学習と深層学習を活用し、植物識別・必要予測・ケア最適化を自動で行うAI園芸アシスタントを開発。",
+        descriptionJp: "3ヶ月間のコース受講後、機械学習と深層学習を用いて、植物の識別・必要予測・最適なケアの自動化を可能にするAI園芸アシスタントを開発しました。",
         projectTitle: "Alyra Jardibot",
         tech: ["Python", "TensorFlow", "Keras", "OpenCV"],
         imageAlt: "AI assistant for smart gardening",

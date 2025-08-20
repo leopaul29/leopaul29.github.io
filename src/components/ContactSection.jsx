@@ -22,8 +22,7 @@ const ContactSection = () => {
             I'd love to hear from you!
           </p>
           <p className="text-lg text-gray-500 mt-4 max-w-3xl mx-auto">
-            日本での機会について話し合ったり、エキサイティングなプロジェクトで協力したりする準備はできていますか？
-            ぜひお聞かせください！
+            ワクワクするような企画や、事業を一緒に始めてみませんか？ぜひ一度ご連絡ください！
           </p>
         </motion.div>
 
@@ -43,6 +42,7 @@ const ContactSection = () => {
               <p className="text-center text-gray-600 mb-8 max-w-2xl mx-auto">
                 Whether you're looking for a dedicated developer or want to discuss the Japanese tech scene, I'm always open to meaningful conversations. Feel free to reach out through any of these platforms.
               </p>
+              <p className="text-center text-gray-500 mb-8 max-w-2xl mx-auto">専任の開発者をお探しの方や、日本と世界のテック業界について語りたい方は、ぜひお気軽にご連絡ください。以下のプラットフォームにてお待ちしています！</p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-lg mx-auto">
                 {contactLinks.map((link, index) => (
                   <motion.a

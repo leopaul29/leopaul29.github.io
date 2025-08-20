@@ -45,10 +45,10 @@ const HeroSection = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.3 }}
-                  className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight"
+                  className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight"
               >
                 Web Developer
-                <span className="block gradient-text">日本で働きたい</span>
+                <span className="block gradient-text">日本での就職を目指す</span>
               </motion.h1>
 
               <motion.p
@@ -67,7 +67,7 @@ const HeroSection = () => {
                   transition={{ delay: 0.5 }}
                   className="text-lg text-gray-500"
               >
-                日本の技術業界で働くことを夢見ているフルスタック開発者です。
+                日本のIT業界での活躍を志す、フルスタック開発者です。
               </motion.p>
             </div>
 
