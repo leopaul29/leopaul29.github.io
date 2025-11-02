@@ -1,7 +1,7 @@
-import { Github, Linkedin, BookOpen, Mail } from 'lucide-react';
 import logo from "/logo.svg";
 import React from "react";
-import {myBlog, myGithub, myLinkedIn} from "@/content/contactLinks.jsx";
+import {BlogLinkData, GithubLinkData, LinkedInLinkData,} from "@/content/contactLinks.jsx";
+import {AnimatedLinkIcon} from "@/components/AnimatedLinkIcon.jsx";
 
 const Footer = () => {
     return (<footer className="bg-gray-900 text-white pt-16 pb-8 px-4">
@@ -27,10 +27,9 @@ const Footer = () => {
             <div>
                 <h4 className="font-semibold text-lg text-white mb-4">Connect</h4>
                 <div className="flex justify-center md:justify-start space-x-4">
-                    <a href={myGithub} aria-label={myGithub} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors"><Github size={22} /></a>
-                    <a href={myLinkedIn} aria-label={myLinkedIn} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors"><Linkedin size={22} /></a>
-                    <a href={myBlog} aria-label={myBlog} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors"><BookOpen size={22} /></a>
-                    {/*<a href="mailto:your.email@example.com" aria-label="myemail" className="text-gray-400 hover:text-white transition-colors"><Mail size={22} /></a>*/}
+                    <AnimatedLinkIcon { ...GithubLinkData } className={"text-gray-400 hover:text-white transition-colors"} />
+                    <AnimatedLinkIcon { ...LinkedInLinkData } className={"text-gray-400 hover:text-white transition-colors"} />
+                    <AnimatedLinkIcon { ...BlogLinkData } className={"text-gray-400 hover:text-white transition-colors"} />
                 </div>
             </div>
         </div>

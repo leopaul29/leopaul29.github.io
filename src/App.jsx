@@ -7,8 +7,13 @@ import ProjectsSection from '@/components/ProjectsSection';
 import ContactSection from '@/components/ContactSection';
 import { Toaster } from '@/components/ui/toaster';
 import Footer from "@/components/Footer.jsx";
+import {initGA} from "@/lib/ga4.js";
 
 function App() {
+  useEffect(() => {
+	initGA();
+  }, []);
+
   const [activeSection, setActiveSection] = useState('hero');
 
   useEffect(() => {

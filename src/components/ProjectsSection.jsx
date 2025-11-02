@@ -1,11 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Github, ExternalLink, Star, GitFork } from 'lucide-react';
+import { Github } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/components/ui/use-toast';
 import {projects} from "@/content/projects.jsx";
-import {myGithub} from "@/content/contactLinks.jsx";
+import {handleClickGithub, myGithub} from "@/content/contactLinks.jsx";
 
 const ProjectsSection = () => {
   const { toast } = useToast();
@@ -71,7 +71,10 @@ const ProjectsSection = () => {
                         rel="noopener noreferrer"
                         whileHover={{ scale: 1.1 }}
                         className="bg-white/90 p-2 rounded-full"
-                        onClick={(e) => e.stopPropagation()} // évite de déclencher le clic global
+                        onClick={(e) => {
+                          handleClickGithub();
+                          e.stopPropagation()
+                        }} // évite de déclencher le clic global
                     >
                       <Github size={16} className="text-gray-700" />
                     </motion.a>
@@ -116,7 +119,7 @@ const ProjectsSection = () => {
           <Button
             variant="outline"
             className="btn-secondary"
-            onClick={() => window.open(myGithub, '_blank')}
+            onClick={() => {handleClickGithub(); window.open(myGithub, '_blank')}}
           >
             <Github className="w-4 h-4 mr-2" />
             View All Projects on GitHub

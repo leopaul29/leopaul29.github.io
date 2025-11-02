@@ -48,6 +48,7 @@ const ContactSection = () => {
                   <motion.a
                     key={index}
                     href={link.href}
+                    onClick={link.track}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center p-4 bg-gray-50 rounded-lg card-hover border"

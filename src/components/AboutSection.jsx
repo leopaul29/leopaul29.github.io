@@ -7,6 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import {emergingTechProjects, experiences, platforms} from "@/content/about.jsx";
 import shodaKohoUkiyo from "/images/shoda-koho-pine-tree-fireworks.jpg";
 import calligraphyImage from "/images/calligraphie-leo.jpg";
+import {handleClickProjectsGithub} from "@/content/contactLinks.jsx";
 
 const AboutSection = () => {
   const [activeModal, setActiveModal] = useState(null);
@@ -145,7 +146,10 @@ const AboutSection = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex-1 inline-flex items-center justify-center px-3 py-1 text-sm border rounded-md hover:bg-gray-100 transition"
-                        onClick={(e) => e.stopPropagation()}
+                        onClick={(e) => {
+                          handleClickProjectsGithub();
+                          e.stopPropagation()
+                        }}
                     >
                       <Github className="w-4 h-4 mr-2" /> Code
                     </a>
