@@ -15,7 +15,7 @@ const skills = [
   { name: 'Java' },
   { name: 'Azure Cloud', certifications: ['AZ-900'] },
   { name: 'Pega System', certifications: ['CSA', 'CSSA'] },
-  { name: 'JLPT N3', certifications: ['Japanese Language Proficiency Test - N3'] }
+  { name: 'JLPT N2', certifications: ['Japanese Language Proficiency Test - N2'] }
 ];
 
 const HeroSection = () => {
